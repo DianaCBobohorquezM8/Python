@@ -26,6 +26,16 @@ Aprendizaje de programar en Python, construcción de bases de datos eficientes, 
 
 ---
 
+## 🛠️ **Herramientas Usadas**
+
+- **Python**: Para el análisis, manipulación y modelado de datos.  
+- **MySQL**: Construcción de bases de datos y normalización.  
+- **Matplotlib**: Visualización de datos y gráficos.  
+- **Google Colab**: Ejecución de código en la nube para análisis de datos.  
+- **Trello**: Organización del plan de estudios.  
+
+---
+
 ## 👩‍🏫 **Instructores**
 
 - Álvaro Hernando Camacho Díaz  
@@ -42,6 +52,18 @@ Aprendizaje de programar en Python, construcción de bases de datos eficientes, 
 - 🤝 Comunicación con equipos de desarrollo
 
 ---
+
+## 📚 **Lo Aprendido**
+
+Esta formación impartida por **Alura Latam** y **Oracle Next Education** me permitió desarrollar las siguientes habilidades:
+1. 🐍 **Programar en Python**: Dominar variables, estructuras de control y funciones.
+2. 📊 **Construcción de bases de datos**: Aplicar conceptos de modelado y normalización con MySQL.
+3. 🌐 **Modelado y organización de datos**: Entender entidades, relaciones y estructuras lógicas y físicas.
+4. 📈 **Análisis visual**: Crear gráficos profesionales utilizando bibliotecas como Matplotlib.
+5. 🤝 **Colaboración en comunidad**: Participar en foros, compartir conocimientos y fortalecer la comunidad Alura Latam.
+
+---
+
 
 ## 🛠️ **Contribuciones**
 
