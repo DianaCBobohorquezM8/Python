@@ -67,7 +67,7 @@ Esta formación impartida por **Alura Latam** y **Oracle Next Education** me per
 ---
 ## 🙏 **Agradecimientos**
 
-Quiero expresar mi más sincero agradecimiento a **Alura Latam** y **Oracle Next Education** por brindarme esta increíble oportunidad a través de la beca para el programa ** especialización en Data Science G8**. 
+Quiero expresar mi más sincero agradecimiento a **Alura Latam** y **Oracle Next Education** por brindarme esta increíble oportunidad a través de la beca para el programa **especialización en Data Science G8**. 
 
 Gracias a su apoyo, he podido:
 - 📘 Acceder a formación de calidad en programación y modelado de datos.
