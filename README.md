@@ -65,7 +65,16 @@ Esta formación impartida por **Alura Latam** y **Oracle Next Education** me per
 5. 🤝 **Colaboración en comunidad**: Participar en foros, compartir conocimientos y fortalecer la comunidad Alura Latam.
 
 ---
+## 🙏 **Agradecimientos**
 
+Quiero expresar mi más sincero agradecimiento a **Alura Latam** y **Oracle Next Education** por brindarme esta increíble oportunidad a través de la beca para el programa **Modelado de Datos con Python G8**. 
+
+Gracias a su apoyo, he podido:
+- 📘 Acceder a formación de calidad en programación y modelado de datos.
+- 🌟 Aprender herramientas valiosas como Python, MySQL y Matplotlib.
+- 🚀 Desarrollar habilidades que impulsarán mi crecimiento profesional en el ámbito de la ciencia de datos.
+
+Estoy profundamente agradecida por el compromiso de estas organizaciones en fomentar la educación y abrir puertas a nuevas oportunidades para personas apasionadas por el aprendizaje. ¡Gracias por ser parte de este camino transformador! 🌍✨
 
 ## 🛠️ **Contribuciones**
 
