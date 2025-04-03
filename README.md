@@ -1,5 +1,7 @@
 # Python
 Aprendizaje de programar en Python, construcción de bases de datos eficientes, modelado y normalización de datos con MySQL.
+<img width="170" alt="image" src="https://github.com/user-attachments/assets/8422903a-e29d-4dfc-b449-456d117b802f" />
+
 
 # 🐍 Modelado de Datos con Python G8 - ONE
 
