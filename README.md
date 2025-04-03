@@ -19,7 +19,9 @@ Aprendizaje de programar en Python, construcción de bases de datos eficientes, 
 ## 🗂️ **Estructura de Aprendizaje**
 
 🐍 **Aprendiendo Python**: Domina las bases del lenguaje para Data Science.
+
 💻 **Challenge de Modelado de Datos**: Practica análisis visual y resolución de problemas con Python y Matplotlib.
+
 🏗️ **Modelado de datos**: Aprende sobre entidades, relaciones, DBMS, y modelos lógico y físico.
 
 ---
