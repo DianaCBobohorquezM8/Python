@@ -31,19 +31,11 @@ Apuntes Modulo 1 Comenzando con Python
 - Espectáculos en vivo, como *Monty Python Live (Mostly)*.
 - Publicaciones: Libros y álbumes de comedia.
 - Influencia cultural: Comparados con los Beatles en el mundo de la comedia.
-
-¡Claro, Diana! Aquí tienes un apartado que incluye el enlace al video para complementarlo con el resumen anterior:
-
 ---
-
 ## 📹 Monty Python en acción: Sketch destacado
 - **Título del video**: [Monty Python - The Ministry of Silly Walks](https://www.youtube.com/watch?v=-Fx0qJNhy9U)
 - **Descripción**: Este icónico sketch muestra a John Cleese interpretando a un funcionario del Ministerio de Caminatas Ridículas. Es un brillante ejemplo del humor absurdo y la creatividad visual de Monty Python.
 - **Enlace**: [Ver video aquí](https://www.youtube.com/watch?v=-Fx0qJNhy9U)
-
----
-¡Por supuesto, Diana! Aquí tienes un resumen claro y organizado del texto:
-
 ---
 
 # ![image](https://github.com/user-attachments/assets/f5ff30cd-f681-486f-a2ab-268198ac61ea)
