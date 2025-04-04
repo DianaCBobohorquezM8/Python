@@ -1,7 +1,4 @@
 Apuntes Modulo 1 Comenzando con Python
-
-¡Por supuesto, Diana! Aquí tienes un resumen estructurado sobre Monty Python y su legado, presentado de forma visual y fácil de entender:
-
 ---
 # 🐍 Monty Python: Los Maestros de la Comedia Absurda
 
