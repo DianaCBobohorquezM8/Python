@@ -46,7 +46,8 @@ Apuntes Modulo 1 Comenzando con Python
 
 ---
 
-# 🐍 Resumen sobre Python
+# ![image](https://github.com/user-attachments/assets/f5ff30cd-f681-486f-a2ab-268198ac61ea)
+ Resumen sobre Python
 
 ## 📜 **Origen e inspiración**
 - **Creado**: Finales de 1989 por el programador holandés **Guido van Rossum**.
