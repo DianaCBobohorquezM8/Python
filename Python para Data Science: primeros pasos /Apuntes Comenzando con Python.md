@@ -126,6 +126,7 @@ Consulta la documentación oficial en [python.org](https://www.python.org).
 
 ### 🤝 *Colaboración en tiempo real*
 - Comparte tus notebooks con otros usuarios, permitiéndoles colaborar en tiempo real (similar a **Google Docs**).
+-Funciona mediante el uso de una máquina virtual.
 
 ### 🛠️ *Bibliotecas preinstaladas*
 - Incluye muchas bibliotecas de Python preinstaladas, como:
