@@ -99,3 +99,41 @@ Consulta la documentación oficial en [python.org](https://www.python.org).
 - **Descripción**: Python tiene una sintaxis fácil de leer y escribir.
 - **Aplicación**: Es ideal para trabajar en áreas como *Data Science* debido a su simplicidad.
 ---
+![image](https://github.com/user-attachments/assets/4624d810-7ea7-48d1-aaea-8b848386a857)
+---
+## 💻 **Google Colaboratory (Google Colab)**
+
+### 🌐 *Acceso en línea*
+- No necesitas instalar nada en tu computadora.
+- Solo necesitas una cuenta de Google para acceder a través de [collab.research.google.com](https://collab.research.google.com).
+
+### 📓 *Notebooks interactivos*
+- Trabajas con "notebooks" que tienen la extensión **.ipynb**.
+- Los notebooks combinan **código**, **texto** y **visualizaciones** en un único documento.
+- Puedes ejecutar el código línea por línea y ver los resultados de inmediato.
+
+### ✏️ *Uso de celdas*
+- **Celdas de código**: Para escribir y ejecutar comandos de Python.
+- **Celdas de texto**: Para explicaciones o anotaciones. Usan **Markdown** para formatear el texto fácilmente.
+
+### 📂 *Integración con Google Drive*
+- Guarda tus notebooks directamente en tu **Google Drive**, facilitando el acceso y la colaboración.
+- También puedes cargar archivos desde tu Drive para trabajar con ellos.
+
+### ⚡ *Recursos de computación*
+- Acceso a recursos de computación en la nube, como **GPUs** y **TPUs**.
+- Especialmente útil para tareas de **Data Science** y **aprendizaje automático**.
+
+### 🤝 *Colaboración en tiempo real*
+- Comparte tus notebooks con otros usuarios, permitiéndoles colaborar en tiempo real (similar a **Google Docs**).
+
+### 🛠️ *Bibliotecas preinstaladas*
+- Incluye muchas bibliotecas de Python preinstaladas, como:
+  - **NumPy**
+  - **Pandas**
+  - **Matplotlib**
+  - **TensorFlow**
+- Facilita el trabajo en proyectos de **Data Science**.
+
+---
+
