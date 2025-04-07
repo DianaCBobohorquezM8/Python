@@ -135,6 +135,22 @@ Consulta la documentación oficial en [python.org](https://www.python.org).
   - **Matplotlib**
   - **TensorFlow**
 - Facilita el trabajo en proyectos de **Data Science**.
+---
+## 🐍 **Funciones de Python**
+
+### ✏️ *Función `print`*
+- **Descripción**: Función incorporada en Python utilizada para mostrar texto o valores en la salida.
+- **Uso**: Permite imprimir representaciones textuales de objetos.
 
 ---
+## 💻 **Características de Colab**
 
+### ⚙️ *Ejecución de celdas*
+- **Métodos**:
+  - **Shift + Enter**: Ejecuta la celda y añade una nueva celda.
+  - **Ctrl + Enter**: Ejecuta la celda sin añadir una nueva.
+
+### ✨ *Interactividad*
+- **Ventaja**: Colab es un entorno interactivo que permite ver resultados de manera inmediata sin necesidad de compilar el código.
+
+---
