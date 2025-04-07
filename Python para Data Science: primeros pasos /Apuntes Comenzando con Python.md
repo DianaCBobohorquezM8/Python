@@ -67,6 +67,35 @@ Apuntes Modulo 1 Comenzando con Python
 Consulta la documentación oficial en [python.org](https://www.python.org).
 
 ---
+## 🖥️ **Lenguaje Interpretado vs. Lenguaje Compilado**
 
+### 🔍 *Lenguaje Interpretado*
+- **Descripción**: El código se ejecuta línea por línea con la ayuda de un programa llamado intérprete.
+- **Ventajas**:
+  - Más flexible y fácil de depurar.
+- **Desventajas**:
+  - Más lento, ya que cada línea se traduce mientras se ejecuta.
 
+### ⚙️ *Lenguaje Compilado*
+- **Descripción**: El código se traduce por completo a lenguaje máquina (que entiende la computadora) antes de ejecutarse, utilizando un programa llamado compilador.
+- **Ventajas**:
+  - Muy rápido en la ejecución porque ya está todo traducido.
+- **Desventajas**:
+  - Más difícil de depurar.
+  - Se necesita compilar cada vez que se realizan cambios.
 
+### ✅ **Conclusión**
+- **Interpretado**: Traducción en tiempo real (*más lento, pero flexible*).
+- **Compilado**: Traducción previa (*más rápido, pero menos flexible*).
+
+---
+## 🐍 **Python: Características Destacadas**
+
+### 🔍 *Lenguaje Interpretado*
+- **Descripción**: Python ejecuta el código línea por línea.
+- **Ventaja**: Esto permite realizar correcciones rápidamente, a diferencia de los lenguajes compilados que traducen todo el código de una vez.
+
+### ✨ *Sintaxis Simple*
+- **Descripción**: Python tiene una sintaxis fácil de leer y escribir.
+- **Aplicación**: Es ideal para trabajar en áreas como *Data Science* debido a su simplicidad.
+---
