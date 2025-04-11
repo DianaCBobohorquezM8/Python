@@ -136,13 +136,6 @@ Consulta la documentación oficial en [python.org](https://www.python.org).
   - **TensorFlow**
 - Facilita el trabajo en proyectos de **Data Science**.
 ---
-## 🐍 **Funciones de Python**
-
-### ✏️ *Función `print`*
-- **Descripción**: Función incorporada en Python utilizada para mostrar texto o valores en la salida.
-- **Uso**: Permite imprimir representaciones textuales de objetos.
-
----
 ## 💻 **Características de Colab**
 
 ### ⚙️ *Ejecución de celdas*
@@ -152,5 +145,52 @@ Consulta la documentación oficial en [python.org](https://www.python.org).
 
 ### ✨ *Interactividad*
 - **Ventaja**: Colab es un entorno interactivo que permite ver resultados de manera inmediata sin necesidad de compilar el código.
+---
+## 🖥️ **Función `print()` en Python**
 
+### ✏️ *Descripción*
+- La función `print()` se utiliza para mostrar información en la pantalla.
+- **Propósito**: Imprime o muestra el contenido pasado como argumento.
+- **Ejemplo básico**:  
+  ```python
+  print('¡Hola, mundo!')
+  ```
+
+### ⭐ *Importancia*
+- Es una de las funciones más útiles en Python.
+- Permite:
+  - Observar lo que está sucediendo en tu programa.
+  - Identificar y depurar errores fácilmente.
+
+### 🛠️ *Sintaxis*
+- **Estructura**: 
+  ```python
+  print(objeto_para_imprimir)
+  ```
+  Donde `objeto_para_imprimir` puede ser texto, números u otros valores.
+  
+### 💡 *Ejercicios prácticos*
+#### Ejemplos sencillos:
+```python
+print('Hola mundo')
+print('Estoy aprendiendo Python')
+print('Escuela de datos de Alura')
+print('Nombre: Diana')
+print('Apellido: Bohorquez')
+```
+
+#### Impresión de caracteres:
+```python
+print('D')
+print('I')
+print('A')
+print('N')
+print('A')
+```
+
+#### Imprimir múltiples valores:
+```python
+print(28, 'febrero', 2003)
+print('Año actual:', 2025)
+```
 ---
