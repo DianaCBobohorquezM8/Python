@@ -245,3 +245,34 @@ print(id(nombre1))  # Dirección de memoria de nombre1
 print(id(nombre2))  # Dirección de memoria de nombre2 (será igual a nombre1 porque tienen el mismo valor)
 ```
 ---
+## 📝 **Comentarios en Python**
+
+### ✏️ *¿Qué son los comentarios?*
+- Los comentarios son anotaciones dentro del código que **no se ejecutan ni interpretan**.
+- **Propósito**: Explican el funcionamiento del código, ayudan a otras personas (o a ti misma) a entender mejor su lógica, y son esenciales para documentar funciones, estructuras o métodos.
+- **Ventaja**: Hacen que el código sea más legible y fácil de mantener.
+
+---
+
+## 🖥️ **Tipos de comentarios**
+
+### 🔹 *Comentarios de una línea*
+- Comienzan con el símbolo `#`.
+- **Ejemplo**:
+  ```python
+  # Este es un comentario de una línea
+  nombre = "Jesús"  # Este comentario explica la asignación de la variable
+  ```
+
+### 🔹 *Comentarios de varias líneas*
+- Se pueden escribir utilizando triple comillas (`'''` o `"""`).
+- **Ejemplo**:
+  ```python
+  '''
+  Este es un comentario de varias líneas.
+  Se utiliza para explicar etapas completas del código o agregar documentación.
+  '''
+  ```
+
+---
+
