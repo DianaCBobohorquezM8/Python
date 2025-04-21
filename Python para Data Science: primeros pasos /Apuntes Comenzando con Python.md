@@ -258,7 +258,7 @@ print(id(nombre2))  # Dirección de memoria de nombre2 (será igual a nombre1 po
 
 ### 🔹 *Comentarios de una línea*
 - Comienzan con el símbolo `#`.
-- **Ejemplo**:
+ **Ejemplo**:
   ```python
   # Este es un comentario de una línea
   nombre = "Jesús"  # Este comentario explica la asignación de la variable
@@ -266,7 +266,7 @@ print(id(nombre2))  # Dirección de memoria de nombre2 (será igual a nombre1 po
 
 ### 🔹 *Comentarios de varias líneas*
 - Se pueden escribir utilizando triple comillas (`'''` o `"""`).
-- **Ejemplo**:
+ **Ejemplo**:
   ```python
   '''
   Este es un comentario de varias líneas.
