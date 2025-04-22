@@ -131,5 +131,69 @@ print(type(promedio))       # Resultado: <class 'float'>
 print(type(es_estudiante))  # Resultado: <class 'bool'>
 ```
 ---
+## 📝 **Ejercicio: Análisis de Salarios y Empleados**
+
+### 📊 **Tabla de información**
+
+| Cargo         | Cantidad | Salario |
+|---------------|----------|---------|
+| Vigilante     | 5        | 300     |
+| Docente       | 16       | 500     |
+| Coordinador   | 2        | 600     |
+
+---
+
+### 🎯 **Objetivos**
+1. Calcular la **cantidad total de empleados**.
+2. Determinar la **diferencia entre el salario más bajo y más alto**.
+3. Calcular el **promedio ponderado de los salarios**.
+
+---
+### 🔢 **Cálculos y Código**
+
+#### 1️⃣ *Cantidad total de empleados*
+Suma de todos los empleados:
+
+```python
+c_vigilante = 5
+c_docente = 16
+c_coordinador = 2
+
+# Cálculo total de empleados
+total_empleados = c_vigilante + c_docente + c_coordinador
+total_empleados
+```
+
+#### 2️⃣ *Diferencia entre el salario más bajo y más alto*
+Resta entre el salario más alto (coordinador) y el más bajo (vigilante):
+
+```python
+s_vigilante = 300
+s_docente = 500
+s_coordinador = 600
+
+# Cálculo de la diferencia
+diferencia_salario = s_coordinador - s_vigilante
+diferencia_salario
+```
+
+#### 3️⃣ *Promedio ponderado de los salarios*
+Para calcularlo:
+- Multiplicamos la cantidad de empleados por sus respectivos salarios.
+- Sumamos los resultados y dividimos por la cantidad total de empleados.
+
+```python
+# Cálculo del promedio ponderado de los salarios
+promedio_salarios = (c_vigilante * s_vigilante + c_docente * s_docente + c_coordinador * s_coordinador) / total_empleados
+promedio_salarios
+```
+
+---
+### ✅ **Resultados esperados**
+Después de ejecutar el código:
+1. **Cantidad total de empleados**: 23.
+2. **Diferencia entre salario más bajo y más alto**: 300.
+3. **Promedio ponderado de los salarios**: 465.22 (aproximadamente).
+---
 
 
