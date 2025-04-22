@@ -1,5 +1,29 @@
 Apuntes Modulo 2 Manipulando datos en Python
 ---
+## 🐍  **Cómo usar la documentación en python.org** 📚
+
+### ✏️ *¿Por qué debería usarla?*
+- Para comprender mejor la **sintaxis y estructuras** al trabajar en mis proyectos de programación.
+- Como referencia sobre **bibliotecas y herramientas**, ya que me interesa optimizar mis proyectos relacionados con Data Science y Automatización.
+- Para aprender más sobre **funciones y métodos** que me ayuden a implementar soluciones eficientes.
+- Para estudiar **ejemplos de código** que complementen mi aprendizaje práctico.
+
+### 🎯 *¿Cómo puede ayudarme?*
+- **Como principiante**: Para dominar los fundamentos del lenguaje y reforzar lo aprendido en mis ejercicios y proyectos personales.
+- **Como referencia avanzada**: Cuando necesito explorar temas más específicos mientras desarrollo mis proyectos de programación.
+
+### 📂 *Organización para mi estudio*
+1. **Temas clave**: Investigar temas relacionados con mis intereses, como:
+   - Manipulación de datos.
+   - Creación de scripts automáticos.
+   - Visualización de datos.
+2. **Bibliotecas útiles**: Familiarizarme con aquellas que necesito, como NumPy, Pandas, y Matplotlib.
+3. **Documentar mi progreso**: Tomar notas importantes para consolidar mi aprendizaje y resolver dudas más rápido.
+
+### 🔗 *Acceso*
+Puedo consultarla directamente en [python.org](https://www.python.org/doc/) para avanzar en mis objetivos de aprendizaje y mejorar mis proyectos.
+
+---
 ## 📝 **Comentarios en Python**
 
 ### ✏️ *¿Qué son los comentarios?*
