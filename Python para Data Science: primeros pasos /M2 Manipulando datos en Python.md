@@ -278,5 +278,53 @@ Después de ejecutar el código:
   print(texto_nuevo)  # Resultado: 'Python es fantástico'
   ```
 ---
+## 💾 Almacenamiento y 🧠 Gestión de Memoria en Transformaciones de Cadenas (Python)
+
+**🔑 Punto Clave:** Para que las modificaciones realizadas a una cadena de texto en Python se guarden de forma permanente, es crucial **asignar el resultado de la transformación a una nueva variable**.
+
+**Explicación:**
+
+* **🧱 Inmutabilidad de las Cadenas:** En Python, las cadenas son inmutables. Esto significa que las operaciones de transformación (como `strip()`, `replace()`, `upper()`, etc.) no modifican la cadena original. En cambio, **✨ crean una nueva cadena** con los cambios aplicados.
+
+* **➡️ Almacenamiento de Cambios:** Si no se asigna el resultado de estas operaciones a una nueva variable, la cadena original permanecerá sin cambios 🚫 y la nueva cadena generada se perderá 💨.
+
+* **⚙️ Gestión de Memoria:**
+    * Las variables en Python actúan como **🏷️ referencias a ubicaciones específicas en la memoria** donde se almacenan los datos (en este caso, las cadenas de texto).
+    * Cuando se asigna una transformación a una nueva variable, esta variable apunta a una **📍 nueva ubicación de memoria** que contiene la cadena modificada.
+    * El **🗑️ recolector de basura (garbage collector)** de Python se encarga de liberar la memoria que ya no está siendo utilizada por ninguna variable. Cuando una variable deja de ser necesaria (por ejemplo, si se redefine sin guardar la referencia anterior), la memoria a la que apuntaba eventualmente se libera.
+
+### 🔢 **Ejemplo práctico con resultados**
+
+#### Caso 1️⃣: Almacenar cambios en una nueva variable
+
+```python
+texto = "  Python es divertido y útil  "
+**nuevo_texto** = texto.strip().replace('y', 'ó').upper()
+
+# Resultados esperados
+**nuevo_texto**
+# Resultado: 'PYTHON ES DIVERTIDO Ó ÚTIL'
+
+id(texto), id(nuevo_texto)
+# Resultado: Dos identificadores diferentes porque 'texto' y 'nuevo_texto' ocupan espacios distintos en la memoria.
+```
+##### ✅ **Resumen de comportamiento esperado**
+- **Caso 1**: Se conserva el valor original en `texto` y se asigna el texto modificado a una nueva variable `nuevo_texto`.
+
+#### Caso 2️⃣: Actualizar directamente la misma variable
+
+```python
+**texto** = texto.strip().replace('y', 'ó').upper()
+
+# Resultados esperados
+**texto**
+# Resultado: 'PYTHON ES DIVERTIDO Ó ÚTIL'
+
+id(texto), id(nuevo_texto)
+# Resultado: Diferentes identificadores; 'texto' apuntará a un nuevo espacio en memoria con el resultado de la transformación, mientras que 'nuevo_texto' conservará su memoria original.
+```
+##### ✅ **Resumen de comportamiento esperado**
+- **Caso 2**: La variable `texto` se modifica directamente y apunta a un nuevo espacio de memoria con los cambios realizados.
+---
 
 
