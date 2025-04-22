@@ -3,13 +3,12 @@
 🚀 **Bienvenido a mi repositorio de aprendizaje sobre Python para Data Science**. Este espacio reúne todos los apuntes, ejercicios y materiales relacionados con el curso **Primeros pasos con Python**, parte de mi formación en ciencia de datos.
 
 ---
-
 ## 🌟 **Estructura del Repositorio**
 
-- 📂 **Apuntes**: Resúmenes y notas sobre los temas del curso.
-- 🛠️ **Ejercicios**: Prácticas y desafíos realizados.
-- 🔗 **Recursos Adicionales**: Artículos y enlaces relacionados.
-- 🏆 **Proyecto Final**: Código del proyecto de aplicación práctica.
+- 📂 **Apuntes**: Resúmenes y notas sobre los temas del curso, incluyendo:
+  - **Ejercicios**: Prácticas y desafíos realizados que complementan el aprendizaje.
+  - **Recursos Adicionales**: Artículos, enlaces y materiales relacionados para profundizar en los temas.
+- 🏆 **Proyecto Final**: Código del proyecto que pone en práctica todo lo aprendido.
 
 ---
 
