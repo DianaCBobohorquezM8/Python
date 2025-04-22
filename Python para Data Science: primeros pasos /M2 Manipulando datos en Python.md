@@ -77,7 +77,59 @@ print(id(nombre))  # Dirección de memoria de la variable nombre
 print(id(edad))    # Dirección de memoria de la variable edad
 print(id(ciudad))  # Dirección de memoria de la variable ciudad
 ```
+---
+## 📌 **Tipos Principales de Variables en Python**
 
+### 1️⃣ **Enteros (`int`)**
+- **Descripción**: Representan números enteros (sin decimales).
+- **Ejemplo**:  
+  ```python
+  edad = 5
+  print(type(edad))  # Verifica que la variable es de tipo 'int'
+  ```
+
+### 2️⃣ **Flotantes (`float`)**
+- **Descripción**: Representan números con decimales.
+- **Ejemplo**:  
+  ```python
+  promedio = 9.5
+  print(type(promedio))  # Verifica que la variable es de tipo 'float'
+  ```
+
+### 3️⃣ **Cadenas de caracteres (`string`)**
+- **Descripción**: Representan texto. Se pueden definir usando comillas simples (`'`) o dobles (`"`).
+- **Ejemplo**:  
+  ```python
+  nombre_estudiante = "Jesús"
+  print(type(nombre_estudiante))  # Verifica que la variable es de tipo 'str'
+  ```
+
+### 4️⃣ **Booleanos (`bool`)**
+- **Descripción**: Representan valores de verdadero (**True**) o falso (**False**).
+- **Ejemplo**:  
+  ```python
+  situacion_academica = True
+  print(type(situacion_academica))  # Verifica que la variable es de tipo 'bool'
+  ```
+
+---
+
+### 🛠️ *Uso de la función `type()` para verificar tipos*
+La función `type()` se utiliza para comprobar el tipo de datos de una variable en Python. Aquí tienes un ejemplo práctico para verificar múltiples variables:
+
+```python
+# Declaración de variables
+nombre = "Jesús"
+edad = 33
+promedio = 10
+es_estudiante = True
+
+# Verificación del tipo de cada variable
+print(type(nombre))         # Resultado: <class 'str'>
+print(type(edad))           # Resultado: <class 'int'>
+print(type(promedio))       # Resultado: <class 'float'>
+print(type(es_estudiante))  # Resultado: <class 'bool'>
+```
 ---
 
 
