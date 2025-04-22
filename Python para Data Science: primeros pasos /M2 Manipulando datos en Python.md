@@ -52,10 +52,7 @@ Puedo consultarla directamente en [python.org](https://www.python.org/doc/) para
   Se utiliza para explicar etapas completas del código o agregar documentación.
   '''
   ```
-
 ---
-
-
 ## 🐍 **Definición de Variables en Python**
 
 ### ✏️ *¿Qué son las variables?*
@@ -218,6 +215,68 @@ Después de ejecutar el código:
 1. **Cantidad total de empleados**: 23.
 2. **Diferencia entre salario más bajo y más alto**: 300.
 3. **Promedio ponderado de los salarios**: 465.22 (aproximadamente).
+---
+## 📝 **Variables de texto en Python**
+
+### ✏️ *¿Qué es  `String`?*
+- Un **string** es una colección de caracteres alfanuméricos que se define colocando el contenido entre comillas simples (`'`) o dobles (`"`).  
+- **Ejemplo**:  
+  ```python
+  t = 'Diana Bohorquez'
+  type(t)  # Verifica que la variable es de tipo 'str'
+  ```
+
+### 🖥️ *Las variables textuales son objetos*
+- Como objetos, las variables de tipo `string` tienen **métodos** que permiten manipular o editar el texto contenido en ellas.
+
+---
+
+## 🛠️ **Métodos de los `String`**
+
+### ✨ *¿Cómo funcionan los métodos?*
+- Los métodos son funciones asociadas a los objetos que permiten realizar operaciones en ellos.  
+- La sintaxis es: `objeto.metodo()`.  
+- **Nota**: Algunos métodos no requieren el uso de paréntesis `()`.
+
+---
+
+### 🔹 **Métodos útiles para strings**
+
+#### 1️⃣ `str.upper()`
+- **Función**: Convierte una string a **mayúsculas**.
+- **Ejemplo**:  *.upper()*
+  ```python
+  texto = "hola mundo"
+  texto_mayusculas = texto.upper()
+  print(texto_mayusculas)  # Resultado: 'HOLA MUNDO'
+  ```
+
+#### 2️⃣ `str.lower()`
+- **Función**: Convierte una string a **minúsculas**.
+- **Ejemplo**: *.lower()*
+  ```python
+  texto = "HOLA MUNDO"
+  texto_minusculas = texto.lower()
+  print(texto_minusculas)  # Resultado: 'hola mundo'
+  ```
+
+#### 3️⃣ `str.strip()`
+- **Función**: Elimina los **espacios en blanco** al inicio y al final de una string.
+- **Ejemplo**:  *.strip()*
+  ```python
+  texto = "  hola mundo  "
+  texto_limpio = texto.strip()
+  print(texto_limpio)  # Resultado: 'hola mundo'
+  ```
+
+#### 4️⃣ `str.replace(antiguo, nuevo)`
+- **Función**: Sustituye todas las ocurrencias del texto `"antiguo"` en la string por el texto `"nuevo"`.
+- **Ejemplo**:  *.replace('antiguo', 'nuevo')*
+  ```python
+  texto = "Python es divertido"
+  texto_nuevo = texto.replace("divertido", "fantástico")
+  print(texto_nuevo)  # Resultado: 'Python es fantástico'
+  ```
 ---
 
 
