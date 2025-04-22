@@ -99,7 +99,7 @@ print(id(edad))    # Dirección de memoria de la variable edad
 print(id(ciudad))  # Dirección de memoria de la variable ciudad
 ```
 ---
-## 📌 **Tipos Principales de Variables en Python**
+## 📌 **Tipos Principales de Variables en Python**  🐍
 
 ### 1️⃣ **Enteros (`int`)**
 - **Descripción**: Representan números enteros (sin decimales).
@@ -278,7 +278,7 @@ Después de ejecutar el código:
   print(texto_nuevo)  # Resultado: 'Python es fantástico'
   ```
 ---
-## 💾 Almacenamiento y 🧠 Gestión de Memoria en Transformaciones de Cadenas (Python)
+## 💾 Almacenamiento y 🧠 Gestión de Memoria en Transformaciones de Cadenas (Python) 🐍
 
 **🔑 Punto Clave:** Para que las modificaciones realizadas a una cadena de texto en Python se guarden de forma permanente, es crucial **asignar el resultado de la transformación a una nueva variable**.
 
@@ -325,6 +325,51 @@ id(texto), id(nuevo_texto)
 ```
 ##### ✅ **Resumen de comportamiento esperado**
 - **Caso 2**: La variable `texto` se modifica directamente y apunta a un nuevo espacio de memoria con los cambios realizados.
+---
+## ➕ **Operadores Aritméticos Adicionales en Python** 🐍
+
+### 🔹 **Exponenciación (`**`)**
+- **Descripción**: Eleva un número a una potencia.
+- **Con variables**:
+  ```python
+  base = 2
+  exponente = 3
+  resultado_expo = base ** exponente
+  resultado_expo  # Resultado: 8
+  ```
+- **Sin variables**:
+  ```python
+  2 ** 3  # Resultado: 8
+  ```
+
+### 🔹 **Módulo (`%`)**
+- **Descripción**: Devuelve el residuo de una división entera.
+- **Con variables**:
+  ```python
+  dividendo = 7
+  divisor = 3
+  residuo = dividendo % divisor
+  residuo  # Resultado: 1
+  ```
+- **Sin variables**:
+  ```python
+  7 % 3  # Resultado: 1
+  ```
+
+### 🔹 **División Entera (`//`)**
+- **Descripción**: Devuelve solo la parte entera de una división.
+- **Con variables**:
+  ```python
+  dividendo = 7
+  divisor = 3
+  cociente_entero = dividendo // divisor
+  cociente_entero  # Resultado: 2
+  ```
+- **Sin variables**:
+  ```python
+  7 // 3  # Resultado: 2
+  ```
+
 ---
 
 
