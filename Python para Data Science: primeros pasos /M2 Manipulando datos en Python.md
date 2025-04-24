@@ -407,7 +407,7 @@ edad = input("¿Qué edad tienes?")
 ```python
 edad = int(input("¿Qué edad tienes?"))
 ```
-Si Jesús responde `"33"`, el valor en la variable `edad` será el número entero `30`.
+Si Jesús responde `"33"`, el valor en la variable `edad` será el número entero `33`.
 
 ---
 
