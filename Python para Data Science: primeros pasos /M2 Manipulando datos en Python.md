@@ -483,7 +483,7 @@ chr(72) + chr(111) + chr(108) + chr(97)
 ```
 ### 🧪 **Experimentando y probando combinaciones**
 
-# Ejemplo 1: Caracteres especiales
+#### Ejemplo 1: Caracteres especiales
 ```python
 caracter1 = chr(36)   # Código 36 es '$'
 caracter2 = chr(169)  # Código 169 es '©'
@@ -493,7 +493,7 @@ caracter3 = chr(174)  # Código 174 es '®'
 caracter1, caracter2, caracter3
 # Salida: '$', '©', '®'
 ```
-# Ejemplo 2: Letras y símbolos
+#### Ejemplo 2: Letras y símbolos
 ```python
 letra = chr(65)       # Código 65 es 'A'
 simbolo = chr(9733)   # Código 9733 es '★'
@@ -502,7 +502,7 @@ simbolo = chr(9733)   # Código 9733 es '★'
 letra, simbolo
 # Salida: 'A', '★'
 ```
-# Ejemplo 3: Emojis con Unicode
+#### Ejemplo 3: Emojis con Unicode
 ```python
 carita_feliz = chr(128522)  # Código 128522 es '🙂'
 carita_triste = chr(128542) # Código 128542 es '😢'
