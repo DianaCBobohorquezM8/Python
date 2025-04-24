@@ -330,46 +330,120 @@ id(texto), id(nuevo_texto)
 
 ### 🔹 **Exponenciación (`**`)**
 - **Descripción**: Eleva un número a una potencia.
-- **Con variables**:
+- Ejemplo con variables:
   ```python
   base = 2
   exponente = 3
   resultado_expo = base ** exponente
   resultado_expo  # Resultado: 8
   ```
-- **Sin variables**:
+- Ejemplo Sin variables:
   ```python
   2 ** 3  # Resultado: 8
   ```
 
 ### 🔹 **Módulo (`%`)**
 - **Descripción**: Devuelve el residuo de una división entera.
-- **Con variables**:
+- Ejemplo con variables:
   ```python
   dividendo = 7
   divisor = 3
   residuo = dividendo % divisor
   residuo  # Resultado: 1
   ```
-- **Sin variables**:
+Ejemplo Sin variables:
   ```python
   7 % 3  # Resultado: 1
   ```
 
 ### 🔹 **División Entera (`//`)**
 - **Descripción**: Devuelve solo la parte entera de una división.
-- **Con variables**:
+  (el residuo de una división es decir el número que queda cuando la división no es exacta)
+- Ejemplo con variables:
   ```python
   dividendo = 7
   divisor = 3
   cociente_entero = dividendo // divisor
   cociente_entero  # Resultado: 2
   ```
-- **Sin variables**:
+Ejemplo Sin variables:
   ```python
   7 // 3  # Resultado: 2
   ```
+---
+## 🖥️ **Capturando Datos en Python**
 
+### 1️⃣ **Función `input`**
+- Permite recolectar datos del usuario.
+- **Nota**: El valor ingresado siempre será de tipo `string`, incluso si parece un número.
+
+#### 🛠️ *Ejemplo relacionado:*
+```python
+nombre = input("¿Cuál es tu nombre?")
+```
+El valor almacenado en la variable será el texto `"Jesús"`.
+
+---
+
+### 2️⃣ **Almacenamiento en Variables**
+- Es importante guardar los datos recolectados en **variables** para utilizarlos posteriormente en el programa.
+
+#### 🛠️ *Ejemplo relacionado:*
+```python
+edad = input("¿Qué edad tienes?")
+```
+*Imaginemos que se ingresa*: `"33"`.
+
+---
+
+### 3️⃣ **Conversión de Tipos**
+- Si necesitas realizar operaciones matemáticas, convierte el valor recolectado de `string` a otro tipo:
+  - **Enteros**: `int(dato)`
+  - **Flotantes**: `float(dato)`
+  - **Cadenas de texto**: `str(dato)`
+  - **Booleanos**: `bool(dato)`
+
+#### 🛠️ *Ejemplo relacionado:*
+```python
+edad = int(input("¿Qué edad tienes?"))
+```
+Si Jesús responde `"33"`, el valor en la variable `edad` será el número entero `30`.
+
+---
+
+### 4️⃣ **Presentación de Resultados**
+- Usa la función `format` para insertar variables en cadenas de texto y mejorar la presentación.
+- También permite agregar formatos como:
+  - **Nueva línea**: `\n`
+  - **Tabulación**: `\t`
+
+#### 🛠️ *Ejemplo relacionado:*
+```python
+nombre = input("¿Cuál es tu nombre?")
+edad = int(input("¿Qué edad tienes?"))
+ciudad = input("¿De dónde eres?")
+
+mensaje = "Hola, {}.\nTienes {} años.\nVives en:\t{}.".format(nombre, edad, ciudad)
+mensaje
+```
+*Si Jesús de Nazaret responde:*
+- Nombre: `"Jesús"`
+- Edad: `"33"`
+- Ciudad: `"Nazaret"`
+
+El resultado será:
+```
+Hola, Jesús.
+Tienes 33 años.
+Vives en:    Nazaret.
+```
+
+---
+
+### ✅ **Notas Importantes**
+1. Captura los datos con `input()` y guárdalos en variables.
+2. Usa las funciones de conversión si necesitas trabajar con datos no textuales.
+3. Mejora la presentación de los resultados con `format` y formatos especiales.
 ---
 
 
