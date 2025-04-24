@@ -437,13 +437,78 @@ Hola, Jesús.
 Tienes 33 años.
 Vives en:    Nazaret.
 ```
-
----
-
 ### ✅ **Notas Importantes**
 1. Captura los datos con `input()` y guárdalos en variables.
 2. Usa las funciones de conversión si necesitas trabajar con datos no textuales.
 3. Mejora la presentación de los resultados con `format` y formatos especiales.
 ---
+## 📝 **Tabla Unicode**
 
+### 🌍 **¿Qué es Unicode?**
+- Es una **tabla de codificación de caracteres** que asocia códigos numéricos con caracteres específicos.
+- Su objetivo es incluir caracteres de **todos los idiomas y sistemas de escritura** existentes en el mundo.
+- En la versión **15.0**, Unicode ya agrupa más de **140,000 caracteres**, incluyendo letras, números, símbolos y emojis.
+
+### 🔁 **¿Por qué es importante?**
+- Unicode nació como una alternativa a tablas más limitadas, como **ASCII**, que solo admitía caracteres del alfabeto inglés y algunos símbolos.
+- Es fundamental para la **globalización**, ya que permite representar caracteres de diferentes idiomas de manera:
+  - **Consistente:** Sin importar el dispositivo o la plataforma.
+  - **Precisa:** Incluyendo caracteres como "ç" (portugués), "ñ" (español) o "П" (ruso).
+- La tabla **se actualiza constantemente** para garantizar la inclusión de más idiomas y sistemas de escritura.
+
+### 🌐 **¿Dónde consultar las actualizaciones?**
+- Puedes acceder al estándar Unicode y sus codificaciones en:
+  - **[unicode.org](https://unicode.org)**
+---
+
+## 🖥️ **Usando Unicode en Python**
+
+### 🔹 **Función `chr`**
+- Devuelve el carácter que corresponde a un **código Unicode** específico.
+- **Sintaxis**: `chr(número_del_carácter)`
+
+#### 🛠️ *Ejemplo 1: Imprimir un carácter*
+```python
+# Obtener el carácter "@", cuyo código Unicode es 64
+chr(64)
+# Salida: '@'
+```
+
+#### 🛠️ *Ejemplo 2: Construir palabras*
+Podemos usar `chr` junto con el operador `+` para concatenar caracteres y formar palabras:
+```python
+# Construir la palabra "Hola"
+chr(72) + chr(111) + chr(108) + chr(97)
+# Salida: 'Hola'
+```
+---
+
+### 🧪 **Experimentando y probando combinaciones**
+
+# Ejemplo 1: Caracteres especiales
+caracter1 = chr(36)   # Código 36 es '$'
+caracter2 = chr(169)  # Código 169 es '©'
+caracter3 = chr(174)  # Código 174 es '®'
+
+# Resultado
+caracter1, caracter2, caracter3
+# Salida: '$', '©', '®'
+
+# Ejemplo 2: Letras y símbolos
+letra = chr(65)       # Código 65 es 'A'
+simbolo = chr(9733)   # Código 9733 es '★'
+
+# Resultado
+letra, simbolo
+# Salida: 'A', '★'
+
+# Ejemplo 3: Emojis con Unicode
+carita_feliz = chr(128522)  # Código 128522 es '🙂'
+carita_triste = chr(128542) # Código 128542 es '😢'
+corazon = chr(10084)        # Código 10084 es '❤'
+
+# Resultado
+carita_feliz + " " + carita_triste + " " + corazon
+# Salida: '🙂 😢 ❤'
+---
 
