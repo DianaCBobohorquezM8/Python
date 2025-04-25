@@ -513,4 +513,100 @@ carita_feliz + " " + carita_triste + " " + corazon
 # Salida: '🙂 😢 ❤'
 ```
 ---
+## 🖥️ **Formateo de Cadenas en Python**
+
+### 🎯 **f-strings**
+- **Descripción**: Método para insertar variables dentro de cadenas.
+- **Sintaxis**: Coloca una `f` antes de la cadena y utiliza `{}` para las variables.
+- **Ejemplo**:
+  ```python
+  nombre = "Jesús"
+  edad = 30
+  print(f"El nombre del alumno es {nombre} y su edad es {edad} años.")
+  # Salida: 'El nombre del alumno es Jesús y su edad es 30 años.'
+  ```
+
+---
+
+### 🎯 **Operador de Formateo (`%`)**
+- **Descripción**: Inserta variables en cadenas utilizando marcadores `%`.
+- **Palabras clave según tipo de variable**:
+  - Cadena de texto: `%s`
+  - Entero: `%d`
+  - Punto flotante: `%f`
+  - Carácter: `%c`
+- **Ejemplo básico**:
+  ```python
+  nombre = "Jesús"
+  print("Nombre del alumno: %s" % (nombre))
+  # Salida: 'Nombre del alumno: Jesús'
+  ```
+
+#### 👥 *Más de una variable con formato:*
+```python
+nombre = "Jesús"
+edad = 30
+media = 9.95
+print("Nombre del alumno es %s, tiene %d años y su media es %.2f." % (nombre, edad, media))
+# Salida: 'Nombre del alumno es Jesús, tiene 30 años y su media es 9.95.'
+```
+
+---
+
+### 🎯 **Método `.format()`**
+- **Descripción**: Más flexible para pasar variables sin usar operadores `%`.
+- **Ejemplo básico**:
+  ```python
+  nombre = "Jesús"
+  print("Nombre del alumno: {}".format(nombre))
+  # Salida: 'Nombre del alumno: Jesús'
+  ```
+
+#### 👥 *Múltiples variables con `.format()`*
+```python
+nombre = "Jesús"
+edad = 30
+media = 9.95
+print("Nombre del alumno es {}, tiene {} años y su media es {}.".format(nombre, edad, media))
+# Salida: 'Nombre del alumno es Jesús, tiene 30 años y su media es 9.95.'
+```
+
+---
+
+### 🛠️ **Caracteres Especiales en Cadenas**
+1. **Nueva línea (`\n`)**:
+   ```python
+   print("Jesús dijo:\n'Los frutos del conocimiento son los más dulces.'")
+   # Salida: Jesús dijo:
+   # 'Los frutos del conocimiento son los más dulces.'
+   ```
+
+2. **Tabulación (`\t`)**:
+   ```python
+   print("Cantidad\tCalidad\n5 muestras\tAlta\n3 muestras\tBaja")
+   # Salida:
+   # Cantidad    Calidad
+   # 5 muestras  Alta
+   # 3 muestras  Baja
+   ```
+
+3. **Barra invertida doble (`\\`)**:
+   ```python
+   print("Ruta del archivo: C:\\archivos\\documento.csv")
+   # Salida: 'Ruta del archivo: C:\archivos\documento.csv'
+   ```
+
+4. **Comillas dobles dentro de comillas dobles (`\"`)**:
+   ```python
+   print("Jesús dijo: \"Ama a tu prójimo como a ti mismo.\"")
+   # Salida: Jesús dijo: "Ama a tu prójimo como a ti mismo."
+   ```
+
+5. **Comillas simples dentro de comillas simples (`\'`)**:
+   ```python
+   print('Jesús dijo: \'La verdad os hará libres.\'')
+   # Salida: Jesús dijo: 'La verdad os hará libres.'
+   ```
+
+---
 
