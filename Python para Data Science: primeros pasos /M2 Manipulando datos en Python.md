@@ -374,6 +374,8 @@ Ejemplo Sin variables:
 ## 🖥️ **Capturando Datos en Python**
 
 ### 1️⃣ **Función `input`**
+La función input permite que el usuario introduzca datos en el programa. Su sintaxis es sencilla, ya que escribimos "input" seguido de paréntesis (). Dentro de ellos, podemos colocar texto que aparecerá antes de la lectura. Al ejecutar el código de la alternativa, el programa imprimirá el mensaje "¿Cuál es tu nombre?" y esperará la entrada del usuario. Cuando el usuario escriba su nombre y presione la tecla Enter, el programa almacenará la entrada en una variable llamada "nombre".
+
 - Permite recolectar datos del usuario.
 - **Nota**: El valor ingresado siempre será de tipo `string`, incluso si parece un número.
 
