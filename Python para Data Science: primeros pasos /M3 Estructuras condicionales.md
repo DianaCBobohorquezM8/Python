@@ -25,14 +25,14 @@ else:
     # código si la condición es falsa
 
 ✨ Ejemplo
-
+```python
 if 2 < 7:
     print("La condición es verdadera")
 else:
     print("La condición es falsa")
     
 Salida: 'La condición es verdadera'
-
+```
 
 📝 Notas Importantes
 - La indentación es crucial en Python: Usa 2 o 4 espacios de manera consistente para los bloques de código.
