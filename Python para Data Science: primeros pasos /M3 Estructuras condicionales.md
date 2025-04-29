@@ -183,7 +183,7 @@ Los operadores lógicos `and`, `or` y `not` permiten **combinar múltiples condi
   **Invierte** el valor lógico de una condición. (Se usa para negar una condición.)
   La expresión not x se evalúa como True si x es False, y como False si x es True.
   *Ejemplo:* `not cond`
-
+---
 📌 Cláusula in – Verificar pertenencia
 La cláusula in se usa para verificar si un elemento está presente en una colección como una lista, tupla o cadena de texto.
 
