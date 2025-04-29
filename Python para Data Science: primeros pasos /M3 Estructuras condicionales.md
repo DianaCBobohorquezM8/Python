@@ -44,11 +44,14 @@ Salida: 'La condición es verdadera'
 - Permite ejecutar diferentes comandos según las condiciones definidas.
 
 ---
-## 🖥️ **Operadores Relacionales en Python**
+## ➕ 🧮 ➖ **Operadores Relacionales en Python**
 
 ### 📖 **Concepto**
 - Los operadores relacionales comparan valores y determinan si una expresión es **verdadera** o **falsa**.
 - Sirven para evaluar **condiciones** entre datos y devolver un resultado booleano.
+  ⚖️
+-  Los operadores relacionales son fundamentales para evaluar condiciones y tomar decisiones en programas 📚.
+- Utilízalos para comparar cualquier tipo de datos, desde números y cadenas hasta información específica como libros.
 
 ---
 
@@ -117,12 +120,7 @@ Salida: 'La condición es verdadera'
   genero_libro2 = "No ficción"
   genero_libro1 != genero_libro2  # Resultado: True
   ```
-
 ---
 
-### ✅ **Notas Finales**
-- Los operadores relacionales son fundamentales para evaluar condiciones y tomar decisiones en programas.
-- Utilízalos para comparar cualquier tipo de datos, desde números y cadenas hasta información específica como libros.
 
----
 
