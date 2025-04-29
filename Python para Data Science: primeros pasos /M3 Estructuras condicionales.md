@@ -197,3 +197,63 @@ if nombre in aprobados:
 else:
     print("❌ El estudiante no está en la lista de aprobados.")
 ```
+---
+## 🧠 Tablas de Verdad en Python
+
+Las **tablas de verdad** nos permiten verificar el comportamiento de los **operadores lógicos** (`and`, `or`, `not`) en todas las combinaciones posibles de valores lógicos (`True` y `False`).
+
+Estos operadores son fundamentales para construir condiciones en Python y tomar decisiones en base a múltiples criterios.
+
+---
+
+### 🔐 Operador `and`
+
+El operador `and` devuelve `True` **solo si ambos operandos son verdaderos**. Si al menos uno es `False`, la salida será `False`.
+
+| operando_1 | operando_2 | operando_1 and operando_2 |
+|------------|------------|----------------------------|
+| False      | False      | False                      |
+| False      | True       | False                      |
+| True       | False      | False                      |
+| True       | True       | ✅ True                    |
+
+---
+
+### 🔓 Operador `or`
+
+El operador `or` devuelve `True` si **al menos uno de los operandos es verdadero**. Solo devuelve `False` cuando **ambos operandos son falsos**.
+
+| operando_1 | operando_2 | operando_1 or operando_2 |
+|------------|------------|---------------------------|
+| False      | False      | ❌ False                 |
+| False      | True       | ✅ True                  |
+| True       | False      | ✅ True                  |
+| True       | True       | ✅ True                  |
+
+---
+
+### 🔁 Operador `not`
+
+El operador `not` **invierte el valor lógico** del operando:  
+- `not True` → `False`  
+- `not False` → `True`
+
+| operando | not operando |
+|----------|---------------|
+| True     | ❌ False      |
+| False    | ✅ True       |
+
+---
+
+💡 Estas tablas son útiles para **entender la lógica booleana** y para **predecir el comportamiento** de condiciones combinadas en estructuras como `if`, `while`, etc.
+
+```python
+# Ejemplo práctico
+x = True
+y = False
+
+print(x and y)  # False
+print(x or y)   # True
+print(not x)    # False
+```
+---
