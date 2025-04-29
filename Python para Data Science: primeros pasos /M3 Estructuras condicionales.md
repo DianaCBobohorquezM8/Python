@@ -180,26 +180,18 @@ Los operadores lógicos `and`, `or` y `not` permiten **combinar múltiples condi
   *Ejemplo:* `cond1 or cond2`
 
 - **`not`** 🔁  
-  **Invierte** el valor lógico de una condición.  
+  **Invierte** el valor lógico de una condición. (Se usa para negar una condición.)
+  La expresión not x se evalúa como True si x es False, y como False si x es True.
   *Ejemplo:* `not cond`
 
----
+📌 Cláusula in – Verificar pertenencia
+La cláusula in se usa para verificar si un elemento está presente en una colección como una lista, tupla o cadena de texto.
 
-### 📌 Cláusula `in`
-
-La cláusula `in` se usa para **verificar si un elemento está presente** en una colección como una lista, tupla o cadena.
-
-*Ejemplo:*  
+🧪 Ejemplo práctico:
 ```python
-"Python" in ["Java", "Python", "C++"]  # Devuelve True
-
-# Lista de estudiantes que aprobaron
 aprobados = ["Ana", "Luis", "Carlos", "María"]
-
-# Solicita el nombre del estudiante
 nombre = input("📥 Ingresa el nombre del estudiante: ")
 
-# Verifica si está en la lista de aprobados
 if nombre in aprobados:
     print("🏅 ¡El estudiante aprobó!")
 else:
