@@ -121,6 +121,46 @@ Salida: 'La condición es verdadera'
   genero_libro1 != genero_libro2  # Resultado: True
   ```
 ---
+## 🔀 Cláusula `elif` en Python
 
+La cláusula `elif` se utiliza para **manejar múltiples condiciones** de forma más eficiente que usando solo `if` y `else`.
+
+🧠 **Sintaxis básica**:
+- Primero se evalúa una condición con `if`.
+- Luego, se pueden usar uno o más `elif` para comprobar condiciones adicionales.
+- Finalmente, se puede usar un `else` para manejar los casos que no cumplan ninguna de las condiciones anteriores.
+
+📌 Esto permite que el programa **evalúe condiciones en cadena**, haciendo el código más limpio, legible y organizado.
+
+💡 Puedes usar **varios `elif`** antes del `else`, lo que brinda **mayor flexibilidad** en la lógica del programa.
+
+**Ejemplo**:  Clasificación de notas
+
+```python
+# Solicita la nota al usuario
+nota = float(input('📥 Ingresa la nota del estudiante: '))
+
+# Evalúa la nota usando if, elif y else
+if nota >= 7:
+    print('🏅 Aprobó')
+elif 7 > nota >= 5:
+    print('🛠️ Recuperación')
+else:
+    print('❌ No aprobó')
+  ```
+
+```python
+nota = 85
+
+if nota >= 90:
+    print("🏅 Excelente")
+elif nota >= 80:
+    print("👍 Muy bien")
+elif nota >= 70:
+    print("✅ Aprobado")
+else:
+    print("❌ Reprobado")
+ ```
+---
 
 
