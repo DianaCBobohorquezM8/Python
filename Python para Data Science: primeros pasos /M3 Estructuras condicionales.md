@@ -150,6 +150,7 @@ else:
   ```
 
 ```python
+# Supongamos que queremos clasificar una nota de un estudiante:
 nota = 85
 
 if nota >= 90:
@@ -162,5 +163,45 @@ else:
     print("❌ Reprobado")
  ```
 ---
+## 🔗 Operadores Lógicos y Cláusula `in` en Python
 
+Los operadores lógicos `and`, `or` y `not` permiten **combinar múltiples condiciones** para controlar el flujo de un programa de forma más precisa.
 
+---
+
+### ⚙️ Operadores Lógicos
+
+- **`and`** 🔐  
+  La condición se cumple **solo si ambas expresiones son verdaderas**.  
+  *Ejemplo:* `cond1 and cond2`
+
+- **`or`** 🔓  
+  La condición se cumple **si al menos una expresión es verdadera**.  
+  *Ejemplo:* `cond1 or cond2`
+
+- **`not`** 🔁  
+  **Invierte** el valor lógico de una condición.  
+  *Ejemplo:* `not cond`
+
+---
+
+### 📌 Cláusula `in`
+
+La cláusula `in` se usa para **verificar si un elemento está presente** en una colección como una lista, tupla o cadena.
+
+*Ejemplo:*  
+```python
+"Python" in ["Java", "Python", "C++"]  # Devuelve True
+
+# Lista de estudiantes que aprobaron
+aprobados = ["Ana", "Luis", "Carlos", "María"]
+
+# Solicita el nombre del estudiante
+nombre = input("📥 Ingresa el nombre del estudiante: ")
+
+# Verifica si está en la lista de aprobados
+if nombre in aprobados:
+    print("🏅 ¡El estudiante aprobó!")
+else:
+    print("❌ El estudiante no está en la lista de aprobados.")
+```
