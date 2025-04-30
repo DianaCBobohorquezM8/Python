@@ -318,5 +318,48 @@ while contador <= 2:
 - 📤 Muestra el resultado.
 - ➕ Aumenta el contador en cada vuelta del bucle.
 ---
+## 🧾 Operadores de Asignación en Python
+
+Los **operadores de asignación** permiten asignar un valor a una variable.
+
+Por ejemplo:
+
+```python
+edad = 20
+escolaridad = 'superior'
+```
+
+También existen **operadores compuestos** que modifican directamente el valor de una variable usando operaciones matemáticas:
+
+---
+
+## ➕ Operadores Compuestos de Asignación
+
+| Operador | Descripción                                                                 | Ejemplo        |
+|----------|-----------------------------------------------------------------------------|----------------|
+| `+=`     | Suma un valor a la variable                                                 | `precio += 5`  |
+| `-=`     | Resta un valor de la variable                                               | `precio -= 5`  |
+| `*=`     | Multiplica la variable por un valor                                         | `precio *= 3`  |
+| `/=`     | Divide la variable por un valor                                             | `precio /= 2`  |
+| `//=`    | Realiza una **división entera** de la variable por un valor                | `precio //= 6` |
+| `%=`     | Calcula el **residuo** de la división y lo asigna a la variable            | `precio %= 5`  |
+
+---
+
+### 🧪 Ejemplo práctico:
+
+```python
+precio = 100
+
+precio += 10   # Ahora precio vale 110
+precio -= 5    # Ahora precio vale 105
+precio *= 2    # Ahora precio vale 210
+precio /= 3    # Ahora precio vale 70.0
+precio //= 4   # Ahora precio vale 17.0 (división entera)
+precio %= 6    # Ahora precio vale 5.0 (residuo de 17 ÷ 6)
+
+print(precio)  # Resultado final: 5.0
+```
+---
 
 
