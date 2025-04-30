@@ -363,7 +363,7 @@ print(precio)  # Resultado final: 5.0
 ---
 ## 🔁 Lazo `for` en Python
 
-El lazo `for` se utiliza para **iterar** sobre un conjunto de elementos, como listas, cadenas de texto o rangos numéricos.
+El `for` es una estructura de **repetición** que permite **iterar** sobre un conjunto de elementos, como listas, cadenas o rangos numéricos. Se usa comúnmente cuando sabemos **cuántas veces** deseamos repetir una acción.
 
 ### 🧱 Estructura básica
 
@@ -372,42 +372,64 @@ for elemento in conjunto:
     # bloque de código a ejecutar
 ```
 
-El bloque de código se ejecuta **una vez por cada elemento** del conjunto.
+El bloque se ejecuta **una vez por cada elemento** del conjunto. Cuando se han recorrido todos los elementos, el bucle se detiene automáticamente.
 
 ---
 
 ## 🔢 Función `range()`
 
-La función `range()` genera una **secuencia de números enteros**. Puede recibir hasta tres parámetros:
+La función `range()` genera una **secuencia de números enteros**. Puede recibir hasta tres argumentos:
 
-- `inicio`: valor inicial (incluido)
-- `fin`: valor final (excluido)
-- `paso`: incremento entre valores (por defecto es `1`)
-
-### Ejemplo:
+- `inicio`: número donde comienza la secuencia (inclusive)
+- `fin`: número donde termina la secuencia (exclusivo)
+- `paso`: incremento entre valores (opcional, por defecto es 1)
 
 ```python
-range(1, 11)  # Genera los números del 1 al 10
+range(1, 6)  # Genera: 1, 2, 3, 4, 5
 ```
 
-📌 *El valor de inicio es **inclusivo**, mientras que el valor final es **exclusivo***.
+📌 El valor inicial es **inclusivo** y el final es **exclusivo**.
 
 ---
 
 ## ⚙️ Iteración automática
 
-A diferencia de un lazo `while`, no necesitas definir un contador manualmente. El lazo `for` **maneja automáticamente** la iteración con cada elemento de la secuencia.
+A diferencia del bucle `while`, en `for` no necesitas crear ni controlar un contador manualmente: Python se encarga de la iteración por ti.
 
 ---
 
-## 🧪 Ejemplo práctico
+## 🧪 Ejemplo básico
 
 ```python
 for n in range(1, 11):
     print(n)
 ```
 
-🔹 Este código imprime los números del **1 al 10** uno por uno.
+🔹 Este código imprime los números del **1 al 10**, uno por línea.
+
+---
+
+## 🏗️ Ejemplo aplicado: Propiedades construidas por año
+
+El siguiente ejemplo usa un bucle `for` para calcular el total de propiedades construidas por una inmobiliaria entre 2017 y 2022:
+
+```python
+total_propiedades = 0
+
+for año in range(2017, 2023):
+    cantidad_propiedades = float(input(f'Digite la cantidad de propiedades en el año {año}: '))
+    total_propiedades += cantidad_propiedades
+
+print(f'Total de propiedades construidas: {total_propiedades} propiedades')
+```
+
+### 🧠 ¿Qué hace este código?
+
+- Usa `range(2017, 2023)` para iterar desde 2017 hasta 2022.
+- En cada vuelta del ciclo, solicita al usuario la cantidad de propiedades construidas ese año.
+- Va **acumulando** las cantidades en la variable `total_propiedades`.
+- Al finalizar, imprime el **total acumulado**.
+
 ---
 
 
