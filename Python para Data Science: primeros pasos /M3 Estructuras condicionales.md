@@ -429,7 +429,67 @@ print(f'Total de propiedades construidas: {total_propiedades} propiedades')
 - En cada vuelta del ciclo, solicita al usuario la cantidad de propiedades construidas ese año.
 - Va **acumulando** las cantidades en la variable `total_propiedades`.
 - Al finalizar, imprime el **total acumulado**.
+---
+¡Claro! Aquí tienes tu explicación mejorada y presentada en formato **Markdown**, con ejemplos claros y explicaciones breves para facilitar el aprendizaje:
 
 ---
+
+## ⛓️ Comandos de Control en Bucles
+
+Cuando usamos estructuras repetitivas como `for` o `while`, podemos controlar su flujo de ejecución utilizando los **comandos de control** `continue` y `break`. Estos comandos permiten **manipular el comportamiento del bucle** según ciertas condiciones.
+
+---
+
+### 🔁 `continue`
+
+El comando `continue` **interrumpe solo la iteración actual** del bucle y **salta directamente a la siguiente**, omitiendo cualquier código restante en esa vuelta.
+
+#### 📌 Ejemplo:
+```python
+for i in range(1, 6):
+    if i == 4:
+        continue
+    print(i)
+```
+
+🔹 **Salida:**
+```
+1
+2
+3
+5
+```
+
+➡️ Cuando `i` es igual a 4, la instrucción `continue` hace que **no se ejecute el `print(i)`** y pasa directamente a la siguiente vuelta.
+### ✅ Conclusión
+- Usa `continue` si quieres **saltar una vuelta específica** del bucle.
+---
+
+### 🛑 `break`
+
+El comando `break` **detiene el bucle por completo**, incluso si no ha terminado de recorrer todos los elementos.
+
+#### 📌 Ejemplo:
+```python
+for i in range(1, 6):
+    if i == 4:
+        break
+    print(i)
+```
+
+🔹 **Salida:**
+```
+1
+2
+3
+```
+
+➡️ Cuando `i` es igual a 4, la instrucción `break` **rompe el bucle**, y ya no se ejecutan más iteraciones.
+
+### ✅ Conclusión
+- Usa `break` si quieres **detener el bucle completamente** bajo cierta condición.
+---
+
+
 
 
