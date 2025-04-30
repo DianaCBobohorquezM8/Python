@@ -257,3 +257,66 @@ print(x or y)   # True
 print(not x)    # False
 ```
 ---
+## 🔁 Lazo `while` en Python
+
+El bucle `while` es una **estructura de control** que permite ejecutar un bloque de código de forma repetida **mientras una condición sea verdadera**.
+
+---
+
+### 📌 **Definición**
+
+El bucle `while` repite un bloque de instrucciones **tantas veces como sea necesario**, siempre que la condición especificada se mantenga como `True`.
+
+---
+
+### 🧱 **Sintaxis básica**
+
+```python
+while condición:
+    # bloque de código a repetir
+```
+
+---
+
+### 🔢 **Ejemplo: Contar del 1 al 10**
+
+```python
+contador = 1
+while contador <= 10:
+    print(contador)
+    contador += 1  # Incremento elegante en Python
+```
+
+**Explicación:**
+
+1. Se inicializa el contador en 1.  
+2. La condición `contador <= 10` se evalúa en cada iteración.  
+3. El número se imprime y se incrementa con `contador += 1`.
+
+---
+#### 🧪Ejemplo práctico:
+
+Solicita dos notas y calcula el promedio para **2 estudiantes**, usando un bucle `while`.
+
+```python
+contador = 1
+
+while contador <= 2:
+    nota1 = float(input('Nota 1: '))
+    nota2 = float(input('Nota 2: '))
+    
+    promedio = (nota1 + nota2) / 2
+    print('Promedio:', promedio)
+    
+    contador += 1
+```
+#### ✅ ¿Qué hace este código?
+
+- 🔁 Repite el proceso dos veces.
+- 📥 Solicita dos notas por estudiante.
+- 🧮 Calcula el promedio.
+- 📤 Muestra el resultado.
+- ➕ Aumenta el contador en cada vuelta del bucle.
+---
+
+
