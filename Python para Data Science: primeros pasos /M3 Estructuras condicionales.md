@@ -361,5 +361,53 @@ precio %= 6    # Ahora precio vale 5.0 (residuo de 17 ÷ 6)
 print(precio)  # Resultado final: 5.0
 ```
 ---
+## 🔁 Lazo `for` en Python
+
+El lazo `for` se utiliza para **iterar** sobre un conjunto de elementos, como listas, cadenas de texto o rangos numéricos.
+
+### 🧱 Estructura básica
+
+```python
+for elemento in conjunto:
+    # bloque de código a ejecutar
+```
+
+El bloque de código se ejecuta **una vez por cada elemento** del conjunto.
+
+---
+
+## 🔢 Función `range()`
+
+La función `range()` genera una **secuencia de números enteros**. Puede recibir hasta tres parámetros:
+
+- `inicio`: valor inicial (incluido)
+- `fin`: valor final (excluido)
+- `paso`: incremento entre valores (por defecto es `1`)
+
+### Ejemplo:
+
+```python
+range(1, 11)  # Genera los números del 1 al 10
+```
+
+📌 *El valor de inicio es **inclusivo**, mientras que el valor final es **exclusivo***.
+
+---
+
+## ⚙️ Iteración automática
+
+A diferencia de un lazo `while`, no necesitas definir un contador manualmente. El lazo `for` **maneja automáticamente** la iteración con cada elemento de la secuencia.
+
+---
+
+## 🧪 Ejemplo práctico
+
+```python
+for n in range(1, 11):
+    print(n)
+```
+
+🔹 Este código imprime los números del **1 al 10** uno por uno.
+---
 
 
