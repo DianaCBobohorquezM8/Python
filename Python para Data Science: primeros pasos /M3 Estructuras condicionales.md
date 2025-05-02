@@ -730,6 +730,78 @@ print(libros)
 ["El principito", "Don Quijote", "Cien años de soledad", "Los miserables"]
 ```
 ---
+# 📚 **Manipulación de Listas en Python**
+
+## 🔹 **`insert()` → Insertar un elemento en una posición específica**
+- Permite **agregar** un elemento en una posición determinada dentro de la lista.
+- **Sintaxis**: `lista.insert(indice, elemento)`
+
+### 📖 *Ejemplo:* Insertar un libro en la posición 2
+```python
+libros = ["1984", "Cien años de soledad", "Los miserables"]
+libros.insert(2, "Don Quijote")
+libros  # Resultado: ["1984", "Cien años de soledad", "Don Quijote", "Los miserables"]
+```
+📌 *Nota:* `lista.insert(len(lista), elemento)` es equivalente a `append()`.
+
+---
+
+## 🔹 **`pop()` → Eliminar y devolver un elemento**
+- **Elimina** el elemento en una posición específica y lo devuelve como resultado.
+- **Sintaxis**: `lista.pop(indice)`
+
+### 📖 *Ejemplo:* Eliminar el segundo libro de la lista
+```python
+libros = ["1984", "Cien años de soledad", "Los miserables"]
+libro_eliminado = libros.pop(1)
+libro_eliminado  # Resultado: "Cien años de soledad"
+libros  # Resultado: ["1984", "Los miserables"]
+```
+
+---
+
+## 🔹 **`index()` → Obtener el índice de un elemento**
+- Devuelve el índice donde se encuentra **un elemento específico** dentro de la lista.
+- **Sintaxis**: `lista.index(elemento)`
+
+### 📖 *Ejemplo:* Encontrar la posición de "Los miserables"
+```python
+libros = ["1984", "Cien años de soledad", "Los miserables"]
+posicion = libros.index("Los miserables")
+posicion  # Resultado: 2
+```
+
+---
+
+## 🔹 **`sort()` → Ordenar una lista**
+- **Ordena** los elementos en **orden ascendente o descendente** (alfabético o numérico).
+- **Sintaxis**: `lista.sort()`
+- Para invertir el orden, usa `lista.sort(reverse=True)`
+
+### 📖 *Ejemplo:* Ordenar una lista de libros
+```python
+libros = ["1984", "Cien años de soledad", "Los miserables", "Don Quijote"]
+libros.sort()
+libros  # Resultado: ["1984", "Cien años de soledad", "Don Quijote", "Los miserables"]
+```
+
+📌 *Orden descendente:*
+```python
+libros.sort(reverse=True)
+libros  # Resultado: ["Los miserables", "Don Quijote", "Cien años de soledad", "1984"]
+```
+
+---
+
+## ✅ **Resumen de Métodos**
+| Método  | Función |
+|---------|--------|
+| `insert()` | Inserta un elemento en una posición específica |
+| `pop()` | Elimina un elemento y lo devuelve |
+| `index()` | Obtiene la posición de un elemento |
+| `sort()` | Ordena la lista en orden ascendente o descendente |
+
+---
 
 
 
