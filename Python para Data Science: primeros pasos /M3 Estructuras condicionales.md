@@ -803,12 +803,14 @@ libros  # Resultado: ["Los miserables", "Don Quijote", "Cien años de soledad", 
 
 ---
 
-# 📚 **Diccionarios**  
+# 📚 **Diccionarios en Python**  
 
 ## 📌 **¿Qué es un Diccionario?**  
-- Estructura de datos que almacena información en **pares clave-valor**.  
-- No usa **índices numéricos**, sino **claves únicas** para acceder a los datos.  
-- Útil para organizar datos de forma eficiente en Python.  
+- Son **colecciones de datos** que almacenan información en **pares clave-valor**.  
+- La **clave** es un elemento único que identifica el valor en el diccionario.  
+- Los **valores** pueden ser de cualquier tipo de dato.  
+- No usan **índices numéricos**, sino claves únicas para acceder a los datos.  
+- Son útiles para almacenar y acceder a datos de manera **organizada y rápida**.  
 
 ---
 
@@ -829,7 +831,11 @@ libro = {
 ## 🔍 **Modificación**  
 Para acceder o modificar valores en un diccionario:  
 
-- **Modificar un valor**  
+- **Acceder a un valor:**  
+  ```python
+  print(libro["titulo"])  # Salida: "Cien años de soledad"
+  ```
+- **Modificar un valor:**  
   ```python
   libro["genero"] = "Novela histórica"
   ```
@@ -852,8 +858,6 @@ Para conocer la cantidad de elementos en un diccionario:
 len(libro)  # Devuelve el número de claves
 ```
 ---
-
-
 
 
 
