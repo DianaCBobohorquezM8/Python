@@ -803,6 +803,57 @@ libros  # Resultado: ["Los miserables", "Don Quijote", "Cien años de soledad", 
 
 ---
 
+# 📚 **Diccionarios**  
+
+## 📌 **¿Qué es un Diccionario?**  
+- Estructura de datos que almacena información en **pares clave-valor**.  
+- No usa **índices numéricos**, sino **claves únicas** para acceder a los datos.  
+- Útil para organizar datos de forma eficiente en Python.  
+
+---
+
+## 🏗 **Sintaxis y Ejemplo**  
+Los diccionarios se crean usando **llaves `{}`** con la estructura `clave: valor`.  
+
+```python
+libro = {
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "año": 1967,
+    "genero": "Realismo mágico"
+}
+```
+
+---
+
+## 🔍 **Modificación**  
+Para acceder o modificar valores en un diccionario:  
+
+- **Modificar un valor**  
+  ```python
+  libro["genero"] = "Novela histórica"
+  ```
+
+---
+
+## ➕ **Añadir Nuevos Elementos**  
+Se pueden agregar nuevos pares clave-valor fácilmente:  
+
+```python
+libro["editorial"] = "Editorial Sudamericana"
+```
+
+---
+
+## 📏 **Tamaño del Diccionario**  
+Para conocer la cantidad de elementos en un diccionario:  
+
+```python
+len(libro)  # Devuelve el número de claves
+```
+---
+
+
 
 
 
