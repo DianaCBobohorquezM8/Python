@@ -525,5 +525,68 @@ for libro in biblioteca["novelas"]:
 - Son útiles para organizar información de manera estructurada y eficiente.  
 
 ---
+# 🛠 **Funciones Incorporadas en Python**  
+
+## 📌 **¿Qué son las funciones incorporadas?**  
+Python incluye una serie de **funciones predefinidas** que facilitan la manipulación de datos y estructuras. Algunas de las más conocidas son:  
+- `print()` → Muestra datos en la consola.  
+- `input()` → Permite la entrada de datos del usuario.  
+- `len()` → Devuelve la cantidad de elementos en una secuencia.  
+- `int()`, `str()`, `float()` → Convertidores de tipo de datos.  
+- `range()` → Genera una secuencia numérica.  
+- `chr()` → Devuelve el carácter correspondiente a un código Unicode.  
+
+Además de estas, hay funciones igualmente **útiles**, como `sum()`, `help()` y `dir()`, que detallamos a continuación.  
+
+---
+
+## ✨ **Funciones destacadas**  
+
+### 🔹 **`sum()`**  
+Suma los elementos de una lista de números.  
+
+```python
+numeros = [3, 7, 2, 10]
+resultado = sum(numeros)
+print(resultado)  # Salida: 22
+```
+
+---
+
+### 🔹 **`help()`**  
+Muestra información sobre la función `len()`.  
+
+```python
+help(len)
+```
+📤 **Salida:** Información sobre el uso y parámetros de `len()`.  
+
+---
+
+### 🔹 **`dir()`**  
+Lista los métodos y atributos de una cadena de texto.  
+
+```python
+texto = "Python"
+print(dir(texto))
+```
+📤 **Salida:** Lista de métodos disponibles para trabajar con `texto`.  
+
+---
+## 📊 **Tabla Resumen de Funciones**  
+
+| Función  | Descripción |
+|----------|------------|
+| `print()` | Muestra datos en la consola |
+| `input()` | Solicita entrada del usuario |
+| `len()` | Devuelve el número de elementos en una secuencia |
+| `int()`, `str()`, `float()` | Convierte tipos de datos |
+| `range()` | Genera una secuencia numérica |
+| `chr()` | Devuelve el carácter de un código Unicode |
+| `sum()` | Suma elementos de una estructura de datos |
+| `help()` | Muestra documentación de un elemento |
+| `dir()` | Lista atributos y métodos disponibles |
+
+---
 
 
