@@ -1,4 +1,4 @@
-Apuntes Modulo 3 Estructuras de Repeticion en Python 🐍
+Apuntes Modulo 4 Estructuras de Repeticion en Python 🐍
 ---
 
 ## 🔁 Lazo `while` en Python
