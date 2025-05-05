@@ -367,4 +367,96 @@ Para conocer la cantidad de elementos en un diccionario:
 len(libro)  # Devuelve el número de claves
 ```
 ---
+## 📌 **Estructura de un Diccionario**  📚 
+Un diccionario es una colección de **pares clave-valor**, donde cada clave permite acceder a su valor, similar a buscar una palabra en un diccionario de idiomas.  
+
+```python
+estudiante = {
+    "matricula": 2168933,
+    "dia_registro": 25,
+    "mes_registro": 10,
+    "grupo": "2E"
+}
+```
+
+---
+
+## 🛠 **Métodos Útiles para Manipular Diccionarios**  
+
+### 🔹 **Eliminar elementos con `pop()`**  
+Elimina una clave específica y devuelve su valor.  
+
+```python
+grupo_eliminado = estudiante.pop("grupo")
+print(grupo_eliminado)  # Resultado: "2E"
+print(estudiante)  # La clave "grupo" ya no está en el diccionario
+```
+
+---
+
+### 🔹 **Obtener todos los elementos con `items()`**  
+Devuelve una lista de **pares clave-valor** en formato de tupla.  
+
+```python
+print(estudiante.items())
+```
+📤 **Salida:**  
+```python
+dict_items([('matricula', 2168933), ('dia_registro', 25), ('mes_registro', 10)])
+```
+
+---
+
+### 🔹 **Obtener todas las claves con `keys()`**  
+Devuelve una lista con todas las **claves** del diccionario.  
+
+```python
+print(estudiante.keys())  # Resultado: dict_keys(['matricula', 'dia_registro', 'mes_registro'])
+```
+
+---
+
+### 🔹 **Obtener todos los valores con `values()`**  
+Devuelve una lista con todos los **valores** del diccionario.  
+
+```python
+print(estudiante.values())  # Resultado: dict_values([2168933, 25, 10])
+```
+
+---
+
+## 🔄 **Iteración sobre Diccionarios**  
+Podemos recorrer un diccionario usando `for`.  
+
+- **Recorrer solo claves:**  
+```python
+for clave in estudiante.keys():
+    print(clave)
+```
+📤 **Salida:**  
+```
+matricula
+dia_registro
+mes_registro
+```
+
+- **Recorrer pares clave-valor:**  
+```python
+for clave, valor in estudiante.items():
+    print(f"{clave}: {valor}")
+```
+📤 **Salida:**  
+```
+matricula: 2168933
+dia_registro: 25
+mes_registro: 10
+```
+
+---
+
+## 📊 **Utilidad en Ciencia de Datos**  
+Los diccionarios son esenciales para manejar datos de manera estructurada, especialmente cuando se combinan con listas. Se utilizan para almacenar registros, organizar información en bases de datos y procesar grandes volúmenes de datos eficientemente.  📖✨
+
+---
+
 
