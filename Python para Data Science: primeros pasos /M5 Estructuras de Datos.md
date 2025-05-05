@@ -459,4 +459,71 @@ Los diccionarios son esenciales para manejar datos de manera estructurada, espec
 
 ---
 
+# 📚 **Listas en Diccionarios**  
+
+## 📌 **¿Qué Son?**  
+Los diccionarios pueden contener **listas como valores**, permitiendo **asociar múltiples datos** a una sola clave. Esto facilita la organización de información estructurada.  
+
+---
+
+## 🔹 **Acceso a Valores**  
+Para acceder a los elementos de una lista dentro de un diccionario, se usa la **clave** correspondiente y operaciones sobre listas.  
+
+---
+
+## 🔄 **Uso de Bucles `for`**  
+Podemos recorrer listas dentro de diccionarios utilizando **bucles `for`**, lo que permite acceder a cada elemento individualmente.  
+
+---
+
+## 🛠 **Operaciones Comunes**  
+Las listas almacenadas en diccionarios pueden modificarse usando métodos como:  
+- **Agregar elementos** (`append()`)  
+- **Eliminar elementos** (`remove()`)  
+- **Contar ocurrencias** (`count()`)  
+
+---
+
+## ✨ **Ejemplos**  
+
+### 🔹 **Diccionario con Listas**  
+```python
+biblioteca = {
+    "novelas": ["Cien años de soledad", "Don Quijote", "Los miserables"],
+    "poesia": ["Veinte poemas de amor", "El rayo que no cesa"],
+    "ensayo": ["El origen de las especies", "Sapiens"]
+}
+```
+
+### 🔹 **Acceder a una Lista en el Diccionario**  
+```python
+print(biblioteca["novelas"])
+# Salida: ["Cien años de soledad", "Don Quijote", "Los miserables"]
+```
+
+### 🔹 **Agregar un Elemento a una Lista dentro del Diccionario**  
+```python
+biblioteca["poesia"].append("Altazor")
+```
+
+### 🔹 **Eliminar un Elemento de una Lista en el Diccionario**  
+```python
+biblioteca["ensayo"].remove("Sapiens")
+```
+
+### 🔹 **Iterar sobre los Elementos de una Lista en el Diccionario**  
+```python
+for libro in biblioteca["novelas"]:
+    print(libro)
+```
+
+---
+
+## ✅ **Conclusión**  
+- **Listas en diccionarios** permiten almacenar múltiples valores bajo una sola clave.  
+- Podemos acceder, modificar y recorrer elementos fácilmente.  
+- Son útiles para organizar información de manera estructurada y eficiente.  
+
+---
+
 
