@@ -133,4 +133,89 @@ help(choice)
 
 ---
 
+# 📦 **Importación de Paquetes en Python**
+
+## ✅ **Formas de Importar**
+
+1. **Importar toda la biblioteca:**
+
+   ```python
+   import nombre_biblioteca
+   ```
+
+   * Se debe usar el prefijo al llamar métodos: `nombre_biblioteca.metodo()`
+
+2. **Importar uno o varios métodos específicos:**
+
+   ```python
+   from nombre_biblioteca import metodo
+   from nombre_biblioteca import met_1, met_2
+   ```
+
+3. **Importar todo desde una biblioteca (no recomendado en grandes proyectos):**
+
+   ```python
+   from nombre_biblioteca import *
+   ```
+
+   * Permite usar los métodos directamente, sin prefijo.
+
+---
+
+## 🎯 **Ventajas de Importar Métodos Específicos**
+
+* ✅ **Ahorro de memoria:** solo se carga lo necesario.
+* ✅ **Código más claro y limpio.**
+* ✅ **Menos riesgo de conflictos de nombres.**
+* ✅ **Mejor rendimiento en programas grandes.**
+
+---
+
+## 🧪 **Ejemplo 1 – Importar métodos específicos**
+
+```python
+from random import randrange, sample
+
+lista = []
+
+for i in range(20):
+    lista.append(randrange(100))
+
+print(sample(lista, 5))
+# Salida: [28, 66, 53, 81, 85] (valores aleatorios)
+```
+
+---
+
+## 🧪 **Ejemplo 2 – Diferencia entre `import` y `from ... import *`**
+
+🔸 Usando `import math`:
+
+```python
+import math
+
+n = int(input("Ingrese un número: "))
+print(f"La raíz cuadrada de {n} es {math.sqrt(n)}")
+```
+
+🔸 Usando `from math import *`:
+
+```python
+from math import *
+
+n = int(input("Ingrese un número: "))
+print(f"La raíz cuadrada de {n} es {sqrt(n)}")  # sin prefijo
+```
+
+---
+
+## ⚠️ **Cuidados al usar `from ... import *`**
+
+* ❌ **Confusión de nombres:** podrías sobrescribir funciones o variables sin darte cuenta.
+* ❌ **Difícil mantener el código:** no queda claro de dónde viene cada función.
+* ❌ **Carga innecesaria:** se importan funciones que quizás no se usen.
+
+---
+
+
 
