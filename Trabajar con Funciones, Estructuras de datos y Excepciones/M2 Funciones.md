@@ -357,5 +357,173 @@ print(f"📚 El promedio ponderado del estudiante es: {nota_final}")
 ```
 
 ---
+# 📝 Documentando Funciones en Python
+
+Una buena documentación mejora la **legibilidad**, **mantenimiento** y **reutilización** de tu código, especialmente en proyectos colaborativos o de análisis de datos.
+
+---
+
+## 🧭 1. Type Hint 🧩
+
+Los **Type Hints** son sugerencias de tipos de datos que ayudan a entender qué tipo de parámetros y valores de retorno se esperan en una función.
+
+### ✅ Ventajas
+
+* Mejora la legibilidad del código
+* Facilita el uso de editores inteligentes (como VS Code o PyCharm)
+* Ayuda a evitar errores de tipo
+
+### 📌 Sintaxis
+
+```python
+def <nombre>(<param>: <tipo_param>) -> <tipo_retorno>:
+    <instrucciones>
+    return resultado
+```
+
+### 🎯 Ejemplo: Calcular la media
+
+```python
+def media(lista: list) -> float:
+    calculo = sum(lista) / len(lista)
+    return calculo
+```
+
+Cuando pasas el cursor sobre `media()`, el editor mostrará que **recibe una lista y retorna un float**.
+
+---
+
+## ⚙️ 2. Default Value (Valores por defecto)
+
+Un **valor por defecto** es un argumento opcional que se usa si el usuario no proporciona uno explícitamente.
+
+### 📌 Sintaxis
+
+```python
+def <funcion>(param: tipo = valor) -> tipo:
+    ...
+```
+
+### 🎯 Ejemplo extendido con valor por defecto
+
+```python
+def media(lista: list = [0]) -> float:
+    calculo = sum(lista) / len(lista)
+    return calculo
+```
+
+Si el usuario no proporciona ninguna lista, se usará `[0]` como predeterminado.
+
+### ✅ Ejecución:
+
+```python
+print(media())  # Salida: 0.0
+```
+
+---
+
+## 🧾 3. Docstring 📚
+
+Un **Docstring** es una cadena de texto que documenta el propósito de una función, sus parámetros y su retorno.
+
+### 🧠 Buenas prácticas:
+
+* Debe ser la **primera línea dentro de la función**
+* Usar comillas triples `'''` o `"""`
+* Se puede acceder con `help(funcion)`
+
+### 📌 Formato
+
+```python
+def funcion(parametros):
+    '''Descripción general de la función
+
+    Parámetros:
+    param1: tipo — Descripción
+    return: tipo — Descripción
+    '''
+    ...
+    return ...
+```
+
+### 🎯 Ejemplo completo:
+
+```python
+def media(lista: list = [0]) -> float:
+    '''Función para calcular la media de notas pasadas por una lista
+
+    lista: list, default [0]
+        Lista con las notas para calcular la media
+    return: float
+        Media calculada
+    '''
+    calculo = sum(lista) / len(lista)
+    return calculo
+```
+
+### ℹ️ Acceso al Docstring:
+
+```python
+help(media)
+```
+
+**Salida:**
+
+```
+Help on function media in module __main__:
+
+media(lista: list = [0]) -> float
+    Función para calcular la media de notas pasadas por una lista
+
+    lista: list, default [0]
+      Lista con las notas para calcular la media
+    return: float
+      Media calculada
+```
+
+---
+
+## 🌡️ Ejercicio Práctico: Conversión de Temperaturas
+
+Queremos convertir una lista de temperaturas en Celsius a Fahrenheit utilizando `lambda` y `map()`.
+
+### 🔢 Fórmula de conversión:
+
+```
+°F = (°C × 9/5) + 32
+```
+
+### 🧪 Código:
+
+```python
+temp_celsius = [0, 25, 37, 78, 100]
+
+# Aplicamos la conversión con map() y lambda
+temp_fahrenheit = list(map(lambda x: (x * 9/5) + 32, temp_celsius))
+
+print(temp_fahrenheit)
+```
+
+### 📌 Salida esperada:
+
+```
+[32.0, 77.0, 98.6, 172.4, 212.0]
+```
+
+✅ Aquí usamos `map()` para aplicar la fórmula a cada elemento y `lambda` para definir la función de conversión en una sola línea.
+
+---
+
+## 🧠 Conclusión
+
+| Elemento             | Descripción breve                                                 |
+| -------------------- | ----------------------------------------------------------------- |
+| 🧩 **Type Hint**     | Mejora la legibilidad del código especificando tipos de datos     |
+| ⚙️ **Default Value** | Establece valores por defecto para parámetros opcionales          |
+| 📚 **Docstring**     | Documenta el propósito, uso y salida de una función               |
+| 🔁 **map + lambda**  | Aplica operaciones simples a listas de forma funcional y elegante |
+
+---
+
 
 
