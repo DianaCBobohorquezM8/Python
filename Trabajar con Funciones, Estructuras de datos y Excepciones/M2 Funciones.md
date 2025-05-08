@@ -242,6 +242,120 @@ print("Promedio: {}, Situación: {}".format(resultado, situacion))
 print(f"Promedio: {resultado}, Situación: {situacion}")
 ```
 ---
+# ⚡ Funciones Lambda en Python
 
+Las **funciones lambda** en Python son conocidas como **funciones anónimas** porque no requieren un nombre explícito ni la palabra clave `def`. Son ideales para operaciones simples y rápidas.
+
+---
+
+## 🔍 ¿Qué es una Función Lambda?
+
+* Una **función lambda** es una función de una sola línea.
+* Se utiliza principalmente para **operaciones rápidas y breves**, especialmente cuando no vale la pena definir una función completa con `def`.
+
+### 🧪 Sintaxis
+
+```python
+lambda argumentos: expresión
+```
+
+📌 **Ejemplo:**
+
+```python
+lambda x: x + 0.5
+```
+
+---
+
+## 🧠 Comparación con Función Tradicional
+
+| Función Tradicional            | Función Lambda                 |
+| ------------------------------ | ------------------------------ |
+| Usa `def` y tiene nombre       | No tiene nombre                |
+| Puede tener varias líneas      | Solo una línea                 |
+| Más útil para tareas complejas | Ideal para operaciones simples |
+
+---
+
+## 📥 Ejemplo Básico: Calificación Cualitativa
+
+### Usando `def`:
+
+```python
+nota_ = float(input("Digite una nota: "))
+
+def cualitativa(nota):
+    return nota + 0.5
+
+print(cualitativa(nota_))
+```
+
+### Usando `lambda`:
+
+```python
+nota_ = float(input("Digite una nota: "))
+
+cualitativa = lambda x: x + 0.5
+
+print(cualitativa(nota_))
+```
+
+---
+
+## 📊 Uso en Ciencia de Datos (Data Science)
+
+Las funciones lambda son muy utilizadas en **Data Science** para:
+
+✅ Transformar datos
+✅ Aplicar funciones rápidas a columnas o listas
+✅ Combinarlas con funciones como `map()`, `filter()` y `reduce()`
+
+---
+
+## 🧮 Aplicar Lambda a una Lista con `map()`
+
+### 🎯 Objetivo: Sumar 0.5 a cada nota
+
+```python
+notas = [6.0, 7.0, 9.0, 5.5, 8.0]
+notas_actualizadas = map(lambda x: x + 0.5, notas)
+```
+
+🔁 `map()` aplica la función lambda a cada elemento de la lista.
+
+### 🔄 Conversión a lista:
+
+```python
+notas_actualizadas = list(notas_actualizadas)
+print(notas_actualizadas)
+```
+
+📌 **Salida esperada:**
+
+```python
+[6.5, 7.5, 9.5, 6.0, 8.5]
+```
+
+---
+
+## 🧷 Ejemplo de Promedio Ponderado
+
+```python
+n1 = float(input("Digite la primera nota: "))
+n2 = float(input("Digite la segunda nota: "))
+n3 = float(input("Digite la tercera nota: "))
+
+# Pesos para cada nota
+p1, p2, p3 = 0.3, 0.3, 0.4
+
+# Lambda para promedio ponderado
+promedio_ponderado = lambda x, y, z: (x * p1 + y * p2 + z * p3)
+
+nota_final = promedio_ponderado(n1, n2, n3)
+
+print(f"📚 El promedio ponderado del estudiante es: {nota_final}")
+```
+
+---
 
 
