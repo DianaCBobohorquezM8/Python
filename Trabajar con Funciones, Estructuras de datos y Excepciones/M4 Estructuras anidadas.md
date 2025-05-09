@@ -168,6 +168,95 @@ ids, nombres = zip(*tupla_iterable)
 print(list(ids))     # ['J392', 'M890', 'J681']
 print(list(nombres)) # ['Juan', 'Maria', 'José']
 ```
+---
+
+# 🐍 List Comprehension con `if` y `else`, Listas Anidadas y Aleatoriedad
+
+📌 **List Comprehension** es una forma concisa y elegante de crear nuevas listas aplicando una operación o condición sobre los elementos de una lista existente o cualquier iterable.
+
+### 🎯 Sintaxis básica:
+
+```python
+[expresión for elemento in iterable]
+```
+
+---
+
+## ⚖️ Uso de `if` y `else` en List Comprehension
+
+Puedes incluir condiciones con `if` y `else` directamente dentro de una List Comprehension para asignar valores de forma condicional.
+
+### 📌 Sintaxis con condición ternaria:
+
+```python
+[expresión_true if condición else expresión_false for elemento in iterable]
+```
+
+### 🧪 Ejemplo:
+
+```python
+promedios = [6.5, 7.0, 8.3, 5.9]
+situaciones = ["aprobado" if nota >= 7 else "reprobado" for nota in promedios]
+print(situaciones)
+# ['reprobado', 'aprobado', 'aprobado', 'reprobado']
+```
+
+---
+
+## 🧱 Listas de Listas
+
+Una **lista de listas** es una estructura que permite almacenar múltiples listas dentro de una lista principal. Es útil para representar **registros complejos**, como estudiantes con sus nombres, notas y estado.
+
+### 📌 Ejemplo:
+
+```python
+nombres = ["Ana", "Luis", "Carlos"]
+notas = [[8, 7, 9], [6, 5, 7], [9, 8, 9]]
+
+registros = [[nombres[i], notas[i], round(sum(notas[i]) / len(notas[i]), 2)] for i in range(len(nombres))]
+print(registros)
+# [['Ana', [8, 7, 9], 8.0], ['Luis', [6, 5, 7], 6.0], ['Carlos', [9, 8, 9], 8.67]]
+```
+
+---
+
+## 🧠 Agregando la situación (aprobado o reprobado)
+
+Podemos extender la lista de listas para incluir la situación del estudiante según su promedio:
+
+```python
+registros = [
+    [nombres[i], notas[i], promedio := round(sum(notas[i]) / len(notas[i]), 2), "aprobado" if promedio >= 7 else "reprobado"]
+    for i in range(len(nombres))
+]
+```
+
+### 🧾 Salida:
+
+```python
+[
+    ['Ana', [8, 7, 9], 8.0, 'aprobado'],
+    ['Luis', [6, 5, 7], 6.0, 'reprobado'],
+    ['Carlos', [9, 8, 9], 8.67, 'aprobado']
+]
+```
+
+---
+
+## 🎲 Generación Aleatoria con `random`
+
+Puedes generar códigos o valores aleatorios para simular datos usando el módulo `random`.
+
+### 📌 Ejemplo: generar códigos aleatorios para estudiantes
+
+```python
+import random
+
+nombres = ["Ana", "Luis", "Carlos"]
+codigos = [f"ID{random.randint(100, 999)}" for _ in nombres]
+print(codigos)
+# ['ID742', 'ID683', 'ID915'] (puede variar cada vez que se ejecuta)
+```
 
 ---
 
