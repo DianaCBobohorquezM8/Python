@@ -2,7 +2,7 @@ Apuntes ✨ Modulo 4 Estructuras Anidadas 🐍
 ---
 # 🐍 List Comprehension y la función `zip()`
 
-## ✅ 1. ¿Qué es List Comprehension?
+## ✅ ¿Qué es List Comprehension?
 
 🔍 **List Comprehension** es una forma concisa y elegante de crear listas en Python. Permite aplicar operaciones y condicionales dentro de una única línea de código.
 
@@ -25,7 +25,7 @@ print(pares)  # [0, 2, 4, 6, 8]
 
 ---
 
-## 🛠️ 2. Funciones incorporadas útiles
+## 🛠️ Funciones incorporadas útiles
 
 ### 🔄 `round()`
 
@@ -49,7 +49,7 @@ print(emparejados)  # [('Ana', 23), ('Luis', 34), ('María', 28)]
 
 ---
 
-## 📊 3. Cálculo de Promedios con Listas Anidadas
+## 📊 Cálculo de Promedios con Listas Anidadas
 
 Supongamos que cada sublista representa las calificaciones de un estudiante:
 
@@ -61,7 +61,7 @@ print(promedios)  # [8.0, 6.0, 9.67]
 
 ---
 
-## 🔍 4. Filtrado de Datos
+## 🔍 Filtrado de Datos
 
 Usa `List Comprehension` con condiciones para filtrar elementos.
 
@@ -76,7 +76,7 @@ print(aprobados)  # [('Ana', 8.0), ('Carlos', 9.67)]
 
 ---
 
-## 🧱 5. Estructuras de Datos en Python
+## 🧱 Estructuras de Datos en Python
 
 ### 📋 Listas
 
@@ -101,7 +101,7 @@ usuario = ("Ana", 28, "Colombia")
 
 ---
 
-## 🔠 6. Legibilidad del Código
+## 🔠  Legibilidad del Código
 
 👀 Un código legible:
 
@@ -118,7 +118,7 @@ aprobados = [(nombre, nota) for nombre, nota in zip(nombres, promedios) if nota 
 
 ---
 
-## 🔗 7. Profundizando en `zip()`
+## 🔗 Profundizando en `zip()`
 
 ### 📌 Uso con un solo iterable:
 
@@ -142,7 +142,7 @@ print(mapa)
 
 ---
 
-## 🧮 8. ¿Qué pasa si los iterables tienen diferente longitud?
+## 🧮 ¿Qué pasa si los iterables tienen diferente longitud?
 
 ```python
 codigos = ["1000", "1001", "1002", "1003", "1004", "1005"]
@@ -157,7 +157,7 @@ print(mercancia)
 
 ---
 
-## 🔁 9. Desempaquetado Inverso con `*`
+## 🔁 Desempaquetado Inverso con `*`
 
 ¿Tienes una lista de tuplas? Puedes **separarlas** fácilmente:
 
@@ -171,11 +171,3 @@ print(list(nombres)) # ['Juan', 'Maria', 'José']
 
 ---
 
-## 📌 Conclusión
-
-🔹 **List Comprehension** permite crear listas limpias y eficientes
-🔹 **`zip()`** es ideal para emparejar datos
-🔹 Las estructuras como **listas** y **tuplas** son claves para organizar información
-🔹 La **legibilidad del código** mejora la colaboración y mantenimiento
-
----
