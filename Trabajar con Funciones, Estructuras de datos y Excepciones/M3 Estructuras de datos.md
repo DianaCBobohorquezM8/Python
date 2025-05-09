@@ -124,3 +124,141 @@ Las **listas de listas** permiten:
 Son fundamentales cuando se necesita **agrupar o estructurar datos jerárquicamente** para mejorar la lógica del programa y su eficiencia.
 
 ---
+
+# 📘 Listas de Tuplas en Python
+
+Las **tuplas** son estructuras de datos **inmutables**, ideales para agrupar información que **no debe cambiarse** una vez definida.
+
+---
+
+## 🧱 ¿Qué es una tupla?
+
+Una tupla se define con **paréntesis `()`** y puede contener múltiples elementos separados por comas.
+
+```python
+registro = ("Julia", 23, "CDMX", "EM", "Python para DS 1")
+```
+
+---
+
+## 🔍 Acceso a elementos
+
+Se accede por **índices**, como en las listas:
+
+```python
+print(registro[0])   # Julia
+print(registro[-1])  # Python para DS 1
+```
+
+---
+
+## 📦 Desempaquetado
+
+Las tuplas pueden desempaquetarse para asignar sus valores a variables:
+
+```python
+nombre, edad, ciudad, estado, curso = registro
+print(f"La estudiante {nombre} tiene {edad} años y vive en {ciudad}-{estado}. Ella está matriculada en el curso de {curso}.")
+```
+
+### ✅ Salida:
+
+```
+La estudiante Julia tiene 23 años y vive en CDMX-EM. Ella está matriculada en el curso de Python para DS 1.
+```
+
+---
+
+## 🆚 Listas vs Tuplas
+
+| Característica | Listas 🔁 (listas) | Tuplas 🔒 (tuplas) |
+| -------------- | ------------------ | ------------------ |
+| Mutabilidad    | ✅ Mutables         | ❌ Inmutables       |
+| Uso            | Datos cambiantes   | Datos fijos        |
+| Símbolo        | `[]`               | `()`               |
+
+---
+
+## 🎯 Objetivo: Lista de tuplas con códigos únicos
+
+Queremos crear una **lista de tuplas** donde cada tupla contenga:
+
+1. Nombre del estudiante
+2. Un código único generado con:
+
+   * La primera letra del nombre
+   * Un número aleatorio entre 0 y 999
+
+---
+
+## 🧮 Paso a paso
+
+### 1️⃣ Lista de nombres
+
+```python
+nombres = ["Ana", "Luis", "María", "Carlos"]
+```
+
+---
+
+### 2️⃣ Importamos `randint` y definimos función
+
+```python
+from random import randint
+
+def genera_numero():
+    return randint(0, 999)
+```
+
+---
+
+### 3️⃣ Creamos lista vacía para almacenar las tuplas
+
+```python
+codigo_estudiantes = []
+```
+
+---
+
+### 4️⃣ Generamos las tuplas
+
+```python
+for i in range(len(nombres)):
+    codigo = nombres[i][0] + str(genera_numero())
+    codigo_estudiantes.append((nombres[i], codigo))
+```
+
+---
+
+### ✅ Resultado:
+
+```python
+print(codigo_estudiantes)
+```
+
+#### 💡 Salida ejemplo:
+
+```python
+[('Ana', 'A723'), ('Luis', 'L085'), ('María', 'M210'), ('Carlos', 'C993')]
+```
+
+---
+
+## 🧠 ¿Por qué usar tuplas aquí?
+
+✅ Son **más ligeras** y rápidas que las listas
+✅ Protegen los datos de modificaciones accidentales
+✅ Funcionan bien como **pares clave-valor** agrupados
+
+---
+
+## 🎓 Conclusión
+
+Las **listas de tuplas** permiten:
+
+* Agrupar datos relacionados
+* Mantener su inmutabilidad (importante para integridad de datos)
+* Ser utilizadas como registros simples (tipo fila en una base de datos)
+
+---
+
