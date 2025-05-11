@@ -257,6 +257,98 @@ codigos = [f"ID{random.randint(100, 999)}" for _ in nombres]
 print(codigos)
 # ['ID742', 'ID683', 'ID915'] (puede variar cada vez que se ejecuta)
 ```
+---
+# 🐍 Python: Dict Comprehension 
+
+## 🧠 ¿Qué es Dict Comprehension?
+
+**Dict Comprehension** es una forma concisa y eficiente de crear diccionarios en Python, similar a la comprensión de listas pero utilizando llaves `{}` en lugar de corchetes `[]`.
+
+🔹 Permite construir o modificar diccionarios aplicando operaciones a partir de **iterables** (como listas, tuplas o conjuntos).
+🔹 También se pueden incluir **condicionales** para definir valores específicos bajo ciertas condiciones.
+
+---
+
+## 🧾 Sintaxis Básica
+
+```python
+{clave: valor for elemento in iterable}
+```
+
+🔁 También se pueden usar condicionales:
+
+```python
+{clave: valor for elemento in iterable if condición}
+```
+
+O incluir una condición ternaria:
+
+```python
+{clave: valor_si_true if condición else valor_si_false for elemento in iterable}
+```
+
+---
+
+## 🛠️ Ejemplo Básico
+
+```python
+numeros = [1, 2, 3, 4, 5]
+cuadrados = {n: n**2 for n in numeros}
+print(cuadrados)
+# {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+```
+
+---
+
+## 🎓 Crear un Diccionario con Datos de Estudiantes
+
+Supongamos que tenemos una lista de listas con los datos de varios estudiantes. Podemos convertir esa información en un diccionario organizado.
+
+### 🧪 Datos:
+
+```python
+registros = [
+    ['Ana', [8, 9, 7], 8.0, 'aprobado'],
+    ['Luis', [5, 6, 7], 6.0, 'reprobado'],
+    ['Carlos', [9, 9, 8], 8.67, 'aprobado']
+]
+```
+
+### 🧰 Construcción del Diccionario:
+
+```python
+diccionario = {
+    "estudiante": [r[0] for r in registros],
+    "notas": [r[1] for r in registros],
+    "promedio_final": [r[2] for r in registros],
+    "situacion": [r[3] for r in registros]
+}
+
+print(diccionario)
+```
+
+### 📤 Salida:
+
+```python
+{
+  'estudiante': ['Ana', 'Luis', 'Carlos'],
+  'notas': [[8, 9, 7], [5, 6, 7], [9, 9, 8]],
+  'promedio_final': [8.0, 6.0, 8.67],
+  'situacion': ['aprobado', 'reprobado', 'aprobado']
+}
+```
+
+---
+
+## 🔁 Iteración para Crear Diccionarios
+
+También puedes usar bucles `for` dentro de la comprensión de diccionarios para transformar datos, por ejemplo, para **filtrar aprobados**:
+
+```python
+aprobados = {r[0]: r[2] for r in registros if r[2] >= 7}
+print(aprobados)
+# {'Ana': 8.0, 'Carlos': 8.67}
+```
 
 ---
 
