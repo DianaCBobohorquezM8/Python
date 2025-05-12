@@ -334,5 +334,125 @@ Este fragmento:
 * Te ayuda a **actuar en consecuencia** (diagnóstico rápido)
 
 ---
+# 🗂️ Cláusula `raise` en Python
+
+La cláusula `raise` permite **generar excepciones personalizadas** en el código cuando una condición específica impide que el programa continúe normalmente. Es muy útil para validar entradas, controlar el flujo de ejecución y mostrar mensajes de error claros al usuario.
+
+---
+
+## 🔧 ¿Qué es `raise`?
+
+`raise` es una instrucción que **lanza (genera)** una excepción intencionalmente. Al hacerlo, puedes detener la ejecución del programa o redirigirla, dependiendo de cómo manejes esa excepción con `try` y `except`.
+
+---
+
+## 🧠 ¿Para qué sirve?
+
+* Detener la ejecución si se detecta un error lógico o de validación.
+* Enviar mensajes personalizados sobre lo que salió mal.
+* Hacer más **robustos y predecibles** tus programas.
+* Integrar validaciones en funciones críticas, por ejemplo en cálculos, transformaciones o lectura de datos.
+
+---
+
+## 📌 Sintaxis básica
+
+```python
+raise TipoDeExcepcion("Mensaje de error")
+```
+
+### Ejemplo:
+
+```python
+raise ValueError("La lista de calificaciones no puede tener más de 4 elementos.")
+```
+
+---
+
+## ✅ Uso práctico: Validación con `raise`
+
+Supón que tienes una función para calcular el promedio de calificaciones. Puedes usar `raise` para asegurarte de que:
+
+* No haya más de 4 calificaciones.
+* Todos los valores sean numéricos.
+
+```python
+def calcular_promedio(calificaciones):
+    if len(calificaciones) > 4:
+        raise ValueError("Demasiadas calificaciones. Máximo permitido: 4")
+    
+    for nota in calificaciones:
+        if not isinstance(nota, (int, float)):
+            raise TypeError(f"Calificación inválida: {nota}. Debe ser numérica.")
+    
+    return sum(calificaciones) / len(calificaciones)
+```
+
+---
+
+## 🧱 Combinar `raise` con `try` / `except`
+
+Puedes capturar las excepciones generadas por `raise` con un bloque `try-except` para:
+
+* Evitar que el programa se detenga.
+* Mostrar mensajes de error personalizados.
+* Continuar con otra acción o registrar el problema.
+
+```python
+try:
+    promedio = calcular_promedio([10, 8, "9", 6])
+except TypeError as e:
+    print("Error de tipo:", e)
+except ValueError as e:
+    print("Error de valor:", e)
+```
+
+---
+
+## 🧭 Jerarquía de Excepciones
+
+Comprender la jerarquía ayuda a:
+
+* Capturar errores específicos.
+* Usar excepciones apropiadas en tus `raise`.
+
+### 🔽 Resumen jerárquico (simplificado)
+
+```text
+BaseException
+└── Exception
+    ├── TypeError
+    ├── ValueError
+    ├── KeyError
+    ├── IndexError
+    ├── FileNotFoundError
+    ├── ZeroDivisionError
+    ├── ...
+```
+
+> 📌 *Importante*: Python primero detecta errores de tipo (`TypeError`) antes que errores de valor (`ValueError`), así que el orden en el `try-except` también importa.
+
+---
+
+## 🚨 Diferencia entre `raise` y otras excepciones
+
+| Característica              | `raise`     | Excepciones comunes (como `KeyError`, `IndexError`) |
+| --------------------------- | ----------- | --------------------------------------------------- |
+| Se lanza manualmente        | ✅           | ❌ (ocurren automáticamente)                         |
+| Personalizable con mensajes | ✅           | Parcialmente                                        |
+| Controla validaciones       | ✅           | ❌                                                   |
+| Necesita estructura `try`   | Recomendado | Opcional                                            |
+
+---
+
+## 🧪 ¿Por qué usar `raise` en ciencia de datos?
+
+* Validar entradas antes de pasar a un modelo o análisis.
+* Evitar errores silenciosos que dan resultados engañosos.
+* Proporcionar información útil al usuario o al desarrollador.
+* Aumentar la calidad del código para proyectos colaborativos.
+
+---
+
 
 
