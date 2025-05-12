@@ -249,5 +249,90 @@ RuntimeWarning: invalid value encountered in true_divide
 ✔️ Usa `finally` para cerrar conexiones o archivos               
 ✔️ Evita `except:` sin especificar tipo (salvo para depuración)      
 
+---
+## 🧰 Características de las Excepciones Útiles para la Depuración en Ciencia de Datos
+
+### 1. **Mensajes detallados de error**
+
+Las excepciones en Python ofrecen **mensajes claros y específicos** sobre qué falló y por qué, lo cual permite:
+
+* Detectar si hubo un error de tipo, clave, índice, etc.
+* Ver exactamente **en qué línea** del código ocurrió el problema.
+
+💡 *Ejemplo útil*: Si cargas un archivo con `pandas.read_csv()` y hay un error de sintaxis o falta una columna, el mensaje lo dice claramente.
 
 ---
+
+### 2. **Trazado de pila (`Traceback`)**
+
+El traceback muestra la **ruta completa** que siguió el código hasta llegar al error. Esto ayuda a:
+
+* Identificar **funciones o módulos intermedios** que contribuyeron al fallo.
+* Ver la **secuencia de llamadas**, útil si el código está compuesto por varias capas (funciones, clases, scripts externos, etc.).
+
+---
+
+### 3. **Clasificación por tipo de error**
+
+Python clasifica las excepciones por tipo (`KeyError`, `TypeError`, `ValueError`, etc.), lo que ayuda a:
+
+* Diagnosticar el problema rápidamente (por ejemplo, saber si se trata de un problema de tipo de dato vs. acceso inválido).
+* Implementar **manejadores personalizados** según el tipo de error.
+
+---
+
+### 4. **Permiten mantener el flujo del programa**
+
+Con bloques `try-except`, puedes capturar el error y:
+
+* Continuar con el análisis sin detener el programa completo.
+* Mostrar un **mensaje informativo** en lugar de un fallo técnico (mejor experiencia de usuario).
+* Registrar el error en un log para análisis posterior.
+
+---
+
+### 5. **Apoyo para pruebas y validación**
+
+Puedes usarlas para:
+
+* Verificar que los datos estén en el formato esperado.
+* Detectar automáticamente **valores nulos**, estructuras incompatibles o funciones mal aplicadas.
+* Automatizar alertas o ajustes si el comportamiento del código no es el esperado.
+
+---
+
+### 6. **Depuración en entornos de producción**
+
+En ciencia de datos aplicada (APIs, dashboards, automatizaciones), las excepciones permiten:
+
+* Registrar errores sin interrumpir el servicio.
+* Enviar alertas cuando ocurre un fallo.
+* Analizar estadísticas de fallos para mejorar modelos o pipelines.
+
+---
+
+## 📌 Ejemplo práctico
+
+Supón que ejecutas este código:
+
+```python
+import pandas as pd
+
+try:
+    df = pd.read_csv("ventas.csv")
+    print(df["precio"].mean())
+except FileNotFoundError:
+    print("El archivo no se encontró. Verifica la ruta.")
+except KeyError:
+    print("La columna 'precio' no existe. Revisa los nombres de columna.")
+```
+
+Este fragmento:
+
+* No interrumpe la ejecución
+* Te dice **qué salió mal**
+* Te ayuda a **actuar en consecuencia** (diagnóstico rápido)
+
+---
+
+
