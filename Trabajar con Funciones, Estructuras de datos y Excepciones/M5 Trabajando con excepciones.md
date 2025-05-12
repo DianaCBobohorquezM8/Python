@@ -88,11 +88,6 @@ except:
 ```
 
 ---
-
-Aquí tienes el contenido organizado y formateado en **Markdown**, con explicaciones claras, ejemplos listos para copiar, y emojis para facilitar la memorización:
-
----
-
 # 🚨 Tipos de Excepciones en Python
 
 En Python, **las excepciones** son errores que se detectan durante la ejecución y detienen el flujo del programa si no son tratadas.
