@@ -89,7 +89,153 @@ except:
 
 ---
 
-## 🗂️ Tipos comunes de excepciones
+Aquí tienes el contenido organizado y formateado en **Markdown**, con explicaciones claras, ejemplos listos para copiar, y emojis para facilitar la memorización:
+
+---
+
+# 🚨 Tipos de Excepciones en Python
+
+En Python, **las excepciones** son errores que se detectan durante la ejecución y detienen el flujo del programa si no son tratadas.
+
+A continuación, te presentamos las **excepciones más comunes** con ejemplos para ayudarte a identificarlas y comprender cómo se producen.
+
+---
+
+## 🧾 1. `SyntaxError`
+
+❌ **Error de sintaxis**: ocurre cuando el analizador detecta que el código no está correctamente escrito.
+
+```python
+print(10 / 2
+```
+
+**Salida:**
+
+```
+  File "<stdin>", line 1
+    print(10/2
+              ^
+SyntaxError: unexpected EOF while parsing
+```
+
+🔍 Olvidamos cerrar el paréntesis. El analizador marca con una flecha dónde ocurrió el error.
+
+---
+
+## 🆔 2. `NameError`
+
+❌ Se lanza cuando usas una **variable o función que no ha sido definida**.
+
+```python
+raiz = sqrt(100)
+```
+
+**Salida:**
+
+```
+NameError: name 'sqrt' is not defined
+```
+
+🔍 Falta importar `sqrt` desde el módulo `math`.
+
+✅ Solución:
+
+```python
+from math import sqrt
+raiz = sqrt(100)
+```
+
+---
+
+## 📦 3. `IndexError`
+
+❌ Ocurre cuando intentas acceder a una **posición inexistente** en una lista, tupla o string.
+
+```python
+lista = [1, 2, 3]
+print(lista[4])
+```
+
+**Salida:**
+
+```
+IndexError: list index out of range
+```
+
+🔍 La lista tiene solo 3 elementos (índices 0 a 2), pero se intenta acceder al índice 4.
+
+---
+
+## 🔢 4. `TypeError`
+
+❌ Se lanza cuando aplicas una operación entre **tipos incompatibles**.
+
+```python
+"1" + 1
+```
+
+**Salida:**
+
+```
+TypeError: can only concatenate str (not "int") to str
+```
+
+🔍 Se intentó concatenar una cadena (`"1"`) con un entero (`1`), lo cual no es válido.
+
+✅ Solución:
+
+```python
+"1" + str(1)     # Resultado: "11"
+int("1") + 1     # Resultado: 2
+```
+
+---
+
+## 🔑 5. `KeyError`
+
+❌ Ocurre cuando se accede a una **clave inexistente** en un diccionario.
+
+```python
+estados = {'EM': 1, 'JC': 2, 'OA': 3}
+print(estados["MI"])
+```
+
+**Salida:**
+
+```
+KeyError: 'MI'
+```
+
+🔍 La clave `'MI'` no existe en el diccionario.
+
+✅ Solución:
+
+```python
+print(estados.get("MI", "Clave no encontrada"))
+```
+
+---
+
+## ⚠️ 6. `Warning` (Advertencias)
+
+⚠️ Son alertas que **no interrumpen la ejecución del programa**, pero indican que algo podría causar problemas.
+
+```python
+import numpy as np
+
+a = np.arange(5)
+print(a / a)
+```
+
+**Salida:**
+
+```
+RuntimeWarning: invalid value encountered in true_divide
+```
+
+🔍 Se intentó dividir 0 por 0, generando un valor `nan` (Not a Number). El programa continúa, pero el resultado puede requerir validación posterior.
+
+---
 
 | Excepción           | Descripción                                    |
 | ------------------- | ---------------------------------------------- |
@@ -103,9 +249,10 @@ except:
 
 ## 🧼 Buenas prácticas
 
-✔️ Captura solo las excepciones que esperas
-✔️ Proporciona mensajes útiles al usuario
-✔️ Usa `finally` para cerrar conexiones o archivos
-✔️ Evita `except:` sin especificar tipo (salvo para depuración)
+✔️ Captura solo las excepciones que esperas            
+✔️ Proporciona mensajes útiles al usuario  
+✔️ Usa `finally` para cerrar conexiones o archivos               
+✔️ Evita `except:` sin especificar tipo (salvo para depuración)      
+
 
 ---
