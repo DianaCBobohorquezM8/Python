@@ -1,84 +1,94 @@
-# Python
-Aprendizaje de programar en Python, construcción de bases de datos eficientes, modelado y normalización de datos con MySQL.
+# 🐍 Python y Modelado de Datos – G8 ONE
+
 <img width="170" alt="image" src="https://github.com/user-attachments/assets/8422903a-e29d-4dfc-b449-456d117b802f" />
 
+🚀 **Bienvenido a mi repositorio de aprendizaje sobre Python y Modelado de Datos**, como parte del programa de especialización en **Data Science G8** ofrecido por **Alura Latam** y **Oracle Next Education**.
 
-# 🐍 Modelado de Datos con Python G8 - ONE
-
-🚀 **Bienvenido a mi repositorio de aprendizaje sobre Modelado de Datos con Python G8**, parte de la escuela de Data Science. Aquí encontrarás todo lo necesario para aprender desde lo básico de Python hasta el modelado y normalización de datos utilizando MySQL. 
-
----
-
-## 🌟 **Estructura del Repositorio**
-
-- 📂 **Apuntes**: Resúmenes y notas de los cursos.
-- 🛠️ **Ejercicios**: Código y prácticas realizadas.
-- 🔗 **Recursos Adicionales**: Artículos, enlaces y materiales complementarios.
-- 🏆 **Desafíos**: Soluciones al Challenge de Modelado de Datos.
+Aquí encontrarás apuntes, ejemplos prácticos y conceptos clave que he aprendido en mi formación, desde los fundamentos de Python hasta el diseño de bases de datos relacionales con MySQL.
 
 ---
 
-## 🗂️ **Estructura de Aprendizaje**
+## 🧠 **Contenido del Repositorio**
 
-🐍 **Aprendiendo Python**: Domina las bases del lenguaje para Data Science.
+📁 Este repositorio está organizado para acompañar mi proceso de formación e incluye:
 
-💻 **Challenge de Modelado de Datos**: Practica análisis visual y resolución de problemas con Python y Matplotlib.
+* 📝 **Apuntes de cursos**: Conceptos clave, sintaxis, ejemplos y ejercicios.
+* 🐍 **Python para Data Science**:
 
-🏗️ **Modelado de datos**: Aprende sobre entidades, relaciones, DBMS, y modelos lógico y físico.
+  * Variables, tipos de datos, estructuras de control y funciones.
+  * Manejo de excepciones y estructuras de datos complejas.
+* 🗃️ **Modelado de Bases de Datos**:
+
+  * Entidades, relaciones y atributos.
+  * Modelado lógico y físico.
+  * Introducción al uso de DBMS y normalización de datos.
+* 📊 **Visualización de Datos**:
+
+  * Gráficos con Matplotlib y análisis visual básico.
 
 ---
 
-## 🛠️ **Herramientas Usadas**
+## 👨‍🏫 **Instructores del Programa**
 
-- **Python**: Para el análisis, manipulación y modelado de datos.  
-- **MySQL**: Construcción de bases de datos y normalización.  
-- **Matplotlib**: Visualización de datos y gráficos.  
-- **Google Colab**: Ejecución de código en la nube para análisis de datos.  
-- **Trello**: Organización del plan de estudios.  
+* Álvaro Hernando Camacho Díaz
+* Wilfredo Antonio Rojas Camejo
+* 🤖 Luri (IA de Alura)
 
 ---
 
-## 👩‍🏫 **Instructores**
+## 📘 **Cursos Realizados y en Progreso**
 
-- Álvaro Hernando Camacho Díaz  
-- Wilfredo Antonio Rojas Camejo  
-- 🤖 **Luri** (IA de Alura)  
+✅ **Completados:**
+
+* *Python para Data Science: primeros pasos*
+* *Python para Data Science: trabajar con funciones, estructuras de datos y excepciones*
+
+📚 **En progreso:**
+
+* *Modelado de bases de datos: entidades, relaciones y atributos*
+* *Modelado de bases de datos relacionales: modelado lógico y físico*
 
 ---
 
 ## 🎯 **Objetivo Personal**
 
-💡 Aprender a modelar datos con Python para mejorar mis habilidades en:
-- 📈 Análisis de datos
-- 💼 Inteligencia de negocios
-- 🤝 Comunicación con equipos de desarrollo
+💡 Desarrollar habilidades clave para desempeñarme profesionalmente en áreas como:
+
+* 📊 Análisis de datos
+* 💼 Inteligencia de negocios
+* 🤝 Comunicación técnica con equipos de desarrollo
 
 ---
 
-## 📚 **Lo Aprendido**
+## 📈 **Habilidades Adquiridas**
 
-Esta formación impartida por **Alura Latam** y **Oracle Next Education** me permitió desarrollar las siguientes habilidades:
-1. 🐍 **Programar en Python**: Dominar variables, estructuras de control y funciones.
-2. 📊 **Construcción de bases de datos**: Aplicar conceptos de modelado y normalización con MySQL.
-3. 🌐 **Modelado y organización de datos**: Entender entidades, relaciones y estructuras lógicas y físicas.
-4. 📈 **Análisis visual**: Crear gráficos profesionales utilizando bibliotecas como Matplotlib.
-5. 🤝 **Colaboración en comunidad**: Participar en foros, compartir conocimientos y fortalecer la comunidad Alura Latam.
+Gracias a este programa, he desarrollado competencias en:
+
+1. 🐍 **Programación con Python**: Escritura de scripts, funciones y estructuras de control.
+2. 🧩 **Estructuración de datos**: Uso eficiente de listas, tuplas, diccionarios y manejo de errores.
+3. 🗃️ **Modelado de bases de datos**: Diseño de modelos relacionales, normalización y uso de MySQL.
+4. 📊 **Visualización**: Creación de gráficos profesionales con Matplotlib.
+5. 🌐 **Trabajo colaborativo**: Participación en foros, networking y aprendizaje comunitario.
 
 ---
+
 ## 🙏 **Agradecimientos**
 
-Quiero expresar mi más sincero agradecimiento a **Alura Latam** y **Oracle Next Education** por brindarme esta increíble oportunidad a través de la beca para el programa **especialización en Data Science G8**. 
+Quiero agradecer a **Alura Latam** y **Oracle Next Education** por brindarme esta oportunidad a través de la beca del programa **Especialización en Data Science G8**.
 
 Gracias a su apoyo, he podido:
-- 📘 Acceder a formación de calidad en programación y modelado de datos.
-- 🌟 Aprender herramientas valiosas como Python, MySQL y Matplotlib.
-- 🚀 Desarrollar habilidades que impulsarán mi crecimiento profesional en el ámbito de la ciencia de datos.
 
-Estoy profundamente agradecida por el compromiso de estas organizaciones en fomentar la educación y abrir puertas a nuevas oportunidades para personas apasionadas por el aprendizaje. ¡Gracias por ser parte de este camino transformador! 🌍✨
+* Acceder a formación de alta calidad.
+* Aprender herramientas clave como Python, MySQL y Matplotlib.
+* Impulsar mi desarrollo profesional y personal en el campo de la ciencia de datos.
+
+🌟 ¡Gracias por ser parte de este camino transformador! 🌍✨
+
+---
 
 ## 🛠️ **Contribuciones**
 
-Si encuentras material relevante o tienes sugerencias para mejorar este repositorio, ¡no dudes en contribuir! 😊
+Si tienes sugerencias, mejoras o deseas aportar contenido relevante, ¡estaré encantada de recibir tus contribuciones! 😊
 
 ---
 
