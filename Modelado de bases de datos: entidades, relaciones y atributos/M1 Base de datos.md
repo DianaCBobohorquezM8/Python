@@ -124,26 +124,32 @@ Podemos utilizar **cualquier software que permita crear gráficos**, como:
 * Paint 🎨
 
 Sin embargo, se **recomienda enfáticamente** usar **software especializado**. Esto facilitará enormemente la futura **conversión a un modelo lógico**. ➡️
+---
+¡Claro, Diana! Aquí tienes el contenido integrado y resumido en estilo Markdown, combinando ambas descripciones de **diagrams.net** de forma clara, completa y sin perder lo esencial:
 
-## 🌐 diagrams.net
+---
 
-**diagrams.net** (anteriormente conocido como draw.io) es una **herramienta en línea excepcionalmente útil** para la creación de diagramas y gráficos de manera **sencilla y efectiva**. Aquí te presento sus puntos clave:
+## 🌐 diagrams.net (antes Draw\.io)
 
-* **🆓 Gratuito y Accesible:** Es completamente **gratuito** y puedes acceder a él desde **cualquier navegador web**.
-* **🖱️ Interfaz Intuitiva:** Su **interfaz es amigable y fácil de usar**. 
-* **🎨 Variedad de Plantillas:** Ofrece una **amplia gama de plantillas y formas predefinidas**.
-* incluyendo:
-    * Diagramas de flujo ➡️
-    * Organigramas 🏢
-    * ¡Y, por supuesto, diagramas de modelos conceptuales! 🧠
-* **🤝 Colaboración en Tiempo Real:** Facilita el **trabajo en equipo** al permitir que varios usuarios editen el mismo diagrama **simultáneamente**. ¡Ideal para proyectos grupales! 🧑‍🤝‍🧑
-* **📤 Exportación y Almacenamiento Flexible:** Puedes **exportar** tus diagramas en múltiples formatos populares, como:
-    * PNG 🖼️
-    * JPEG 🏞️
-    * PDF 📄
-    También te ofrece la opción de **guardar** tus trabajos en la **nube**, con integraciones directas a servicios como:
-    * Google Drive ☁️
-    * Dropbox 📦
+**diagrams.net** es una herramienta en línea **gratuita y muy versátil** para la creación de diagramas, ideal para modelado de bases de datos y representación visual de modelos conceptuales.
+
+#### ✅ Ventajas Clave
+
+* **🆓 Gratuito y accesible:** Funciona desde cualquier navegador, sin necesidad de instalación.
+* **🖱️ Interfaz intuitiva:** Fácil de usar, ideal tanto para principiantes como para usuarios avanzados.
+* **🎨 Amplia variedad de plantillas:** Incluye diagramas de flujo, organigramas y modelos conceptuales.
+* **🧩 Soporte para modelado estructurado:**
+
+  * Permite **modificaciones estructurales** dinámicas según se tomen nuevas decisiones.
+  * Da especial atención a los **atributos** y sus especificaciones.
+  * Permite ocultar atributos irrelevantes para una **visualización más limpia**.
+* **📖 Diccionario de datos completo:** Ayuda a documentar y definir claramente las estructuras modeladas.
+* **🤝 Colaboración en tiempo real:** Varias personas pueden editar el mismo diagrama simultáneamente.
+* **📤 Exportación flexible y almacenamiento en la nube:** Compatible con formatos como PNG, JPEG y PDF. Puedes guardar en:
+
+  * Google Drive ☁️
+  * Dropbox 📦
+
 ---
 ## 🧰 Herramientas CASE para Modelado de Bases de Datos
 Las herramientas CASE  ayudan a desarrollar sistemas de forma más estructurada.
