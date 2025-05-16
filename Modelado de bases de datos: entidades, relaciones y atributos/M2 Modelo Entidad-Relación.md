@@ -93,11 +93,51 @@ El **modelado de datos** es la base para lograr un buen proyecto final del banco
 - **Hacer las preguntas correctas**  
   El entrevistador debe tener **conocimiento previo** sobre el dominio del proyecto para formular preguntas relevantes y obtener información útil.
 
+### 🧩 En resumen
+> **La entrevista es la base para construir un proyecto de base de datos coherente y eficaz que responda a las necesidades reales del cliente.**
 ---
 
-### 🧩 En resumen
+## 📚 Modelo Entidad-Relación (MER) y Diagrama Entidad-Relación (DER)
 
-> **La entrevista es la base para construir un proyecto de base de datos coherente y eficaz que responda a las necesidades reales del cliente.**
-```
+### 🤔 ¿Qué es el Modelo Entidad-Relación (MER)?
+
+El **Modelo Entidad-Relación (MER)** es un concepto abstracto que describe:
+
+- 🧩 Los objetos o **entidades** del mundo real.
+- 📝 Sus características o **atributos**.
+- 🔗 Las **relaciones** entre dichas entidades.
+
+Es la representación **conceptual** o teórica que guía la construcción de la base de datos.
+
+---
+
+### 🖼️ ¿Qué es el Diagrama Entidad-Relación (DER)?
+
+El **Diagrama Entidad-Relación (DER)** es la representación **gráfica** del MER, y permite visualizar de forma clara y tangible:
+
+- 🧩 Las entidades.
+- 📝 Sus atributos.
+- 🔗 Las relaciones entre ellas.
+
+Facilita la comunicación y comprensión entre los miembros del equipo de trabajo.
+
+---
+
+### ⚖️ Diferencias entre MER y DER
+
+| Aspecto           | MER                                   | DER                               |
+|-------------------|-------------------------------------|----------------------------------|
+| 🌟 Naturaleza     | Concepto abstracto y teórico         | Representación gráfica y tangible |
+| 🎯 Propósito      | Definir la estructura conceptual     | Visualizar y comunicar el modelo  |
+| 🛠️ Uso principal | Guía para la construcción de la BD   | Facilita la comprensión en equipo |
+
+---
+
+### ⭐ Importancia del DER
+
+El DER es fundamental para que todos los miembros del equipo comprendan cómo se establecerán las relaciones entre las diversas entidades dentro de la base de datos, asegurando un entendimiento común y facilitando el desarrollo del proyecto.
+
+
+
 
 
