@@ -38,4 +38,31 @@ Organiza la información en **tablas** (relaciones), donde cada fila representa 
 * Establecer relaciones lógicas estructuradas.
 * Garantizar **integridad y consistencia** de los datos.
 
+## 🧱 Importancia del Mini-mundo en el Modelado de Datos
+
+El **mini-mundo** es considerado una de las etapas más importantes del proceso de modelaje de los datos, ya que a través de esta etapa entendemos cómo se estructurará la base de datos.
+
+---
+
+### ✅ ¿Por qué el Mini-mundo es clave en el modelado de datos?
+
+1. **Delimita el alcance del sistema**  
+   Permite definir *qué parte del mundo real se va a representar*, evitando incluir información innecesaria.
+
+2. **Facilita la comunicación con el cliente o usuario final**  
+   Ayuda a alinear la visión del equipo técnico con las necesidades reales del negocio, ya que representa *una visión compartida* del problema.
+
+3. **Guía el diseño del modelo conceptual**  
+   Todo lo que se modela —entidades, atributos y relaciones— proviene del análisis del mini-mundo.
+
+4. **Evita ambigüedades**  
+   Al tener un contexto bien definido, es más fácil detectar errores o malentendidos en etapas tempranas.
+
+5. **Eficiencia en el desarrollo**  
+   Un buen análisis del mini-mundo ahorra tiempo y esfuerzo en etapas posteriores como el diseño lógico, físico y la implementación.
+
+### 🧠 En resumen:
+
+> **El mini-mundo no es solo un paso inicial, es la base sobre la que se construye toda la estructura del sistema de base de datos.**  
+> Si está bien definido, el resto del modelado será mucho más claro, preciso y útil.
 ---
