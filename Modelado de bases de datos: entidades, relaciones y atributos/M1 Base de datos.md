@@ -145,3 +145,36 @@ Sin embargo, se **recomienda enfáticamente** usar **software especializado**. E
     * Google Drive ☁️
     * Dropbox 📦
 ---
+## 🧰 Herramientas CASE para Modelado de Bases de Datos
+Las herramientas CASE  ayudan a desarrollar sistemas de forma más estructurada.
+
+🧩 Características clave que deben tener
+* Representación gráfica clara con formas geométricas
+* Integración entre el diagrama ER y el diccionario de datos
+* Interacción mínima con el usuario (interfaz intuitiva)
+* Generación automática de scripts SQL
+
+Soporte para múltiples plataformas
+Una **herramienta CASE** (Computer-Aided Software Engineering) debe contar con la capacidad de utilizar **diversas formas geométricas** con el fin de:
+
+* 📊 Desarrollar una buena **representación visual**
+* 📚 Administrar el **diccionario de datos**
+* 🔗 Integrar el **diagrama entidad-relación (ER)** con el **diccionario de datos**
+* 🧑‍💻 Permitir una **mínima interacción con el usuario**
+
+---
+
+## 🛠️ Herramientas CASE Populares
+
+Existen diversas herramientas avanzadas en el mercado que facilitan el **modelado de bases de datos**. A continuación, se presenta una tabla con algunas de las más conocidas:
+
+| Herramienta          | Empresa / Licencia  | Características Destacadas                                                |
+| -------------------- | ------------------- | ------------------------------------------------------------------------- |
+| **Oracle Designer™** | Oracle ®            | Arquitectura flexible, disponible en múltiples plataformas 🌐             |
+| **PowerDesigner™**   | Sybase ®            | Una de las herramientas más utilizadas en el mercado 📈                   |
+| **ERWin**            | CA ®                | Muy utilizada, robusta para modelado y diseño de bases de datos 🧩        |
+| **DBDesigner**       | Freeware / Gratuita | Posee una gran cantidad de recursos, buena alternativa open source 💡     |
+| **PyDesigner**       | Open Source (Linux) | Compatible con Linux, enfocada al diseño de BD en plataformas abiertas 🐧 |
+| **VISIO™**           | Microsoft ®         | Herramienta de diseño visual con enfoque exclusivo en diagramación 🖊️    |
+
+---
