@@ -66,3 +66,38 @@ El **mini-mundo** es considerado una de las etapas más importantes del proceso 
 > **El mini-mundo no es solo un paso inicial, es la base sobre la que se construye toda la estructura del sistema de base de datos.**  
 > Si está bien definido, el resto del modelado será mucho más claro, preciso y útil.
 ---
+## 🎤 La Importancia de las Entrevistas en el Modelado de Datos
+
+El **modelado de datos** es la base para lograr un buen proyecto final del banco de datos. Una de las etapas más cruciales de este proceso es la **entrevista con el/la cliente**, en la cual se identifican las **reglas de negocio** del proyecto.
+
+---
+
+### 🔍 ¿Por qué son tan importantes las entrevistas?
+
+1. **Definen la dirección del proyecto**  
+   A través de las entrevistas, conocemos todos los detalles del negocio y podemos estructurar los próximos pasos de manera coherente.
+
+2. **Evitan retrabajos**  
+   Si no se identifican bien las necesidades desde el inicio, puede ser necesario rehacer esta etapa, lo que genera **retrasos y costos adicionales**.
+
+3. **Permiten entender las reglas de negocio**  
+   Las entrevistas son el medio principal para descubrir cómo funciona el sistema en el mundo real y qué necesita el cliente exactamente.
+
+---
+
+### 🎯 Factores clave en una buena entrevista
+
+- **Elegir bien a los informantes**  
+  Se debe entrevistar a personas que realmente conozcan el negocio en profundidad.
+
+- **Hacer las preguntas correctas**  
+  El entrevistador debe tener **conocimiento previo** sobre el dominio del proyecto para formular preguntas relevantes y obtener información útil.
+
+---
+
+### 🧩 En resumen
+
+> **La entrevista es la base para construir un proyecto de base de datos coherente y eficaz que responda a las necesidades reales del cliente.**
+```
+
+
