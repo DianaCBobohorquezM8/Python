@@ -37,7 +37,7 @@ Para saber si algo puede considerarse una entidad, se puede usar un **artículo 
 
 Las entidades se representan en los **Diagramas Entidad-Relación (ER)** mediante:
 
-* 🔷 **Rectángulos**
+* 🟦 **Rectángulos**
 * 🟦 También pueden usarse **rectángulos con esquinas redondeadas**
 
 ---
