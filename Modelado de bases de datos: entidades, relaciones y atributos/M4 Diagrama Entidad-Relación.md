@@ -33,50 +33,58 @@ Por ejemplo:
 * **N\:M (Muchos a muchos)** → Un estudiante puede inscribirse en varios cursos, y un curso puede tener varios estudiantes.
 
 ---
+# 📌 Tipos de Cardinalidad en Modelado de Datos
 
-# 📌 Tipos de Cardinalidad
-
-La **cardinalidad** describe cuántas instancias de una entidad pueden estar asociadas con instancias de otra entidad. Es clave para entender cómo se relacionan los elementos en una base de datos.
+La **cardinalidad** se refiere a la cantidad de instancias de una entidad que pueden estar asociadas con instancias de otra entidad. Este concepto es esencial para entender las relaciones entre entidades en un modelo de base de datos.
 
 ---
 
-## 📊 Tabla de Tipos de Cardinalidad
+## 📊 Tabla Resumen de Tipos de Cardinalidad
 
-| Tipo de Cardinalidad | Descripción                                                                 | Ejemplo                                                 |
-| -------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------- |
-| 1 : 1                | Una instancia de una entidad se relaciona con una sola instancia de otra.   | Un departamento es gestionado por un único colaborador. |
-| 1 : N                | Una instancia de una entidad se relaciona con muchas instancias de otra.    | Un departamento tiene varios colaboradores.             |
-| 0 : 1                | Una instancia puede no tener relación o solo una relación con otra entidad. | Un departamento puede no tener un colaborador asignado. |
-| 0 : N                | Una instancia puede relacionarse con muchas o ninguna instancia de otra.    | Algunos departamentos no tienen colaboradores.          |
-| M : N                | Muchas instancias de una entidad se relacionan con muchas de otra.          | Varios pedidos pueden incluir varios libros.            |
+| Tipo  | Descripción                                                                         | Ejemplo                                                                                         |
+| ----- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| 1 : 1 | Una instancia de una entidad se relaciona con una sola instancia de otra entidad.   | Un estudiante tiene un único ID. Cada ID pertenece a un único estudiante.                       |
+| 1 : N | Una instancia de una entidad se relaciona con múltiples instancias de otra entidad. | Un cliente puede realizar varios pedidos, pero cada pedido pertenece a un solo cliente.         |
+| 0 : 1 | Una entidad puede no tener relación o tener una sola relación con otra.             | Un departamento puede no tener un colaborador asignado.                                         |
+| 0 : N | Una entidad puede tener muchas relaciones o ninguna.                                | Algunos departamentos podrían no tener colaboradores asignados.                                 |
+| M : N | Muchas instancias de una entidad se relacionan con muchas instancias de otra.       | Un cliente puede comprar varios productos y un producto puede ser comprado por varios clientes. |
 
 ---
 
 ## 🔍 Explicaciones Detalladas
 
-### ✅ 1 a 1
+### ✅ 1 a 1 (Uno a Uno)
 
-* Cada registro de una entidad se relaciona con uno y solo un registro de la otra entidad.
-* *Ejemplo:* Un **departamento** es gestionado por **un solo colaborador**.
+* Cada registro de una entidad se relaciona con **solo uno** de otra entidad.
+* 📘 *Ejemplo:* Un **estudiante** tiene un único **ID**, y cada **ID** corresponde a un solo estudiante.
+
+---
 
 ### 🔁 1 a N (Uno a Muchos)
 
-* Una entidad se relaciona con varias instancias de otra.
-* *Ejemplo:* Un **departamento** puede tener **muchos colaboradores**.
+* Cada instancia de la entidad A se relaciona con **múltiples instancias** de la entidad B.
+* Es una de las cardinalidades **más comunes** en bases de datos reales y empresariales.
+* 📘 *Ejemplo:* Un **cliente** puede tener **varios pedidos**, pero **cada pedido** pertenece solo a **un cliente**.
 
-### ❔ 0 a 1
+---
 
-* Una entidad puede estar relacionada con ninguna o una sola instancia de otra.
-* *Ejemplo:* Un **departamento** puede no tener **colaborador asignado**.
+### ❔ 0 a 1 (Cero o Uno)
 
-### 🔄 0 a N (Cero a Muchos)
+* Una entidad puede estar relacionada con **ninguna o una sola** instancia de otra entidad.
+* 📘 *Ejemplo:* Un **departamento** puede o no tener **un colaborador asignado**.
 
-* Una entidad puede tener muchas relaciones o ninguna.
-* *Ejemplo:* **Varios departamentos** podrían no tener **colaboradores asignados**.
+---
+
+### 🔄 0 a N (Cero o Muchos)
+
+* Una entidad puede estar relacionada con **muchas o ninguna** instancia de otra.
+* 📘 *Ejemplo:* Puede haber **varios departamentos**, y **algunos** pueden **no tener colaboradores** asignados.
+
+---
 
 ### 🔗 M a N (Muchos a Muchos)
 
-* Muchas instancias de una entidad se relacionan con muchas de otra.
-* *Ejemplo:* En un **club de libros**, varios **pedidos** pueden incluir **varios libros**.
+* Varias instancias de una entidad pueden estar relacionadas con **varias instancias** de otra entidad.
+* 📘 *Ejemplo:* Un **cliente** puede **comprar varios productos**, y un **producto** puede ser **comprado por varios clientes**.
 
 ---
