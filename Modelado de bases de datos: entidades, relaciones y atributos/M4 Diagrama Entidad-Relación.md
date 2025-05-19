@@ -88,3 +88,104 @@ La **cardinalidad** se refiere a la cantidad de instancias de una entidad que pu
 * 📘 *Ejemplo:* Un **cliente** puede **comprar varios productos**, y un **producto** puede ser **comprado por varios clientes**.
 
 ---
+# 🔒 Restricción de Participación (Cardinalidad Mínima)
+
+La **restricción de participación**, también conocida como **dependencia de existencia**, indica si una entidad necesita obligatoriamente estar relacionada con otra para existir dentro del modelo de datos.
+
+---
+
+## 📌 ¿Qué es la restricción de participación?
+
+Este concepto se utiliza para determinar si **la existencia de una entidad depende de su relación con otra entidad**.
+
+Existen dos tipos principales:
+
+---
+
+## 🧩 Tipos de Restricción de Participación
+
+| Tipo                     | Descripción                                                          | Ejemplo                                                                                      |
+| ------------------------ | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 🔗 Participación Total   | La entidad **debe** estar relacionada con otra entidad para existir. | Todo colaborador debe estar asignado a **algún departamento** para poder trabajar.           |
+| 🔁 Participación Parcial | La entidad **puede o no** estar relacionada con otra entidad.        | No todos los colaboradores gestionan departamentos, pero todo departamento tiene un gerente. |
+
+---
+
+### 🔗 Participación Total
+
+* Todas las instancias de una entidad **están obligadas** a participar en la relación.
+* Se representa gráficamente con una **línea doble** entre la entidad y la relación.
+* 📘 *Ejemplo:*
+
+  > Si un colaborador **siempre debe pertenecer** a un departamento para estar en la empresa, entonces la participación del colaborador en la relación con el departamento es **total**.
+
+---
+
+### 🔁 Participación Parcial
+
+* Algunas instancias de la entidad **pueden no** estar relacionadas con otra entidad.
+* Se representa con una **línea simple** en los diagramas.
+* 📘 *Ejemplo:*
+
+  > Un departamento necesita ser gestionado por un colaborador, pero **no todos los colaboradores gestionan** departamentos. Por lo tanto, la participación del colaborador en esa relación es **parcial**.
+
+---
+
+## 🧠 Resumen
+
+| Característica         | Participación Total 🔗                 | Participación Parcial 🔁                        |
+| ---------------------- | -------------------------------------- | ----------------------------------------------- |
+| ¿Es obligatoria?       | Sí                                     | No                                              |
+| Representación gráfica | Línea doble                            | Línea simple                                    |
+| Ejemplo típico         | Colaborador asignado a un departamento | Colaborador que no necesariamente es un gerente |
+
+## 🎯 Mini-mundo: Colegio
+
+Supongamos que estamos modelando un sistema para un colegio.
+
+### 🧩 Entidades:
+
+* `Estudiante`
+* `Clase`
+* `Profesor`
+
+---
+
+## 🔗 Ejemplo de **Participación Total**
+
+**Regla de negocio:**
+
+> Todo estudiante debe estar inscrito en al menos una clase.
+
+Esto significa que la existencia de un estudiante depende de estar relacionado con una clase. Por lo tanto, la **participación del estudiante en la relación Inscripción es Total**.
+
+```
+[Estudiante] == Inscripción ==> [Clase]
+(Línea doble entre Estudiante e Inscripción)
+```
+
+---
+
+## 🔁 Ejemplo de **Participación Parcial**
+
+**Regla de negocio:**
+
+> Un profesor puede o no estar asignado a una clase.
+
+Esto indica que hay profesores que no están dando clases en el momento, por lo que **la participación del profesor en la relación Asignación es Parcial**.
+
+```
+[Profesor] -- Asignación ==> [Clase]
+(Línea simple entre Profesor y Asignación)
+```
+
+---
+
+## 📌 Tabla resumen del ejemplo
+
+| Entidad    | Relación    | Otra Entidad | Tipo de Participación | Justificación                                             |
+| ---------- | ----------- | ------------ | --------------------- | --------------------------------------------------------- |
+| Estudiante | Inscripción | Clase        | Total 🔗              | Todo estudiante debe estar inscrito en al menos una clase |
+| Profesor   | Asignación  | Clase        | Parcial 🔁            | No todos los profesores están asignados a una clase       |
+
+---
