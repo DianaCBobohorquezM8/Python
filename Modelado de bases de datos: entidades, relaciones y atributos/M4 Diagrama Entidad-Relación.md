@@ -224,3 +224,96 @@ Para resolverla, se crea la entidad asociativa **ItemPedido**, que permite:
 Las entidades asociativas son esenciales para **representar relaciones complejas** de forma clara, eficiente y estructurada. Son una aplicación práctica del principio de **abstracción**, ya que simplifican el modelo de datos sin perder información.
 
 ---
+# 🔄 Resolución de la Relación Muchos a Muchos (N\:M)
+
+## 📌 ¿Qué es una Relación N\:M?
+
+Una relación de **muchos a muchos (N\:M)** ocurre cuando **varias instancias** de una entidad pueden estar asociadas con **varias instancias** de otra entidad, y viceversa.
+
+### 🎯 Problema:
+
+Este tipo de relación puede volverse compleja e **ineficiente** en el modelado físico de bases de datos, ya que **no permite usar claves primarias únicas directamente**, y puede generar ambigüedad.
+
+---
+
+## 🧩 Solución: Crear una Entidad Asociativa
+
+Para resolver esta situación, se crea una **entidad asociativa**, que:
+
+* Representa la relación como una **entidad independiente**.
+* Transforma una relación N\:M en **dos relaciones 1\:N**.
+* Permite **agregar atributos adicionales** relacionados con la interacción.
+
+---
+
+## 🛠️ Ejemplo: Ensambladora de carros
+
+### Entidades:
+
+* `Pedido`: Representa una solicitud realizada por la ensambladora.
+* `Pieza`: Representa un componente que puede ser parte de uno o más pedidos.
+* `Item`: Entidad **asociativa** que une a `Pedido` y `Pieza`.
+
+### 🔗 Relación original (N\:M):
+
+```plaintext
+[Pedido] ⬌ [Pieza]
+```
+
+Un pedido puede contener varias piezas y una pieza puede estar en varios pedidos.
+
+---
+
+## 🔄 Transformación con la Entidad Asociativa
+
+Se crea la entidad **Item**, que representa la relación entre `Pedido` y `Pieza`. Ahora tenemos:
+
+```plaintext
+[Pedido] 1---< [Item] >---1 [Pieza]
+```
+
+* Un `Pedido` puede tener muchos `Items` (1\:N)
+* Una `Pieza` puede estar en muchos `Items` (1\:N)
+* Cada `Item` une un único `Pedido` con una única `Pieza`
+
+---
+
+## 🧾 Atributos posibles de la entidad asociativa `Item`
+
+| Atributo       | Descripción                        |
+| -------------- | ---------------------------------- |
+| IDPedido       | Clave foránea hacia `Pedido`       |
+| IDPieza        | Clave foránea hacia `Pieza`        |
+| Cantidad       | Número de piezas solicitadas       |
+| PrecioUnitario | Precio de cada pieza en ese pedido |
+| Observaciones  | Comentarios adicionales            |
+
+🔑 **Clave primaria**: Compuesta por `IDPedido + IDPieza`
+
+---
+
+## 📊 Representación de Cardinalidades
+
+| Relación      | Cardinalidad | Descripción                              |
+| ------------- | ------------ | ---------------------------------------- |
+| Pedido → Item | 1 : N        | Un pedido puede tener muchos ítems       |
+| Pieza → Item  | 1 : N        | Una pieza puede aparecer en muchos ítems |
+| Item → Pedido | N : 1        | Cada ítem pertenece a un solo pedido     |
+| Item → Pieza  | N : 1        | Cada ítem corresponde a una sola pieza   |
+
+---
+
+## ✅ Beneficios de la Entidad Asociativa
+
+* 📚 **Organiza** la información compleja de relaciones N\:M.
+* 🔍 **Facilita el análisis** de datos entre entidades.
+* 🧱 **Permite almacenar detalles** adicionales de la relación.
+* 🛡️ Mejora la **integridad referencial** y la consistencia del modelo.
+
+---
+
+## 🧠 Conclusión
+
+Todas las relaciones de muchos a muchos deben representarse mediante una **entidad asociativa** para que el modelo sea **claro, escalable y funcional**. Este enfoque **simplifica** la estructura del modelo conceptual y **prepara el terreno** para una implementación efectiva en bases de datos relacionales.
+
+---
