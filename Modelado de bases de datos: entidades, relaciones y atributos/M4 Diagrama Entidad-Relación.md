@@ -140,3 +140,87 @@ Existen dos tipos principales:
 | Ejemplo típico         | Colaborador asignado a un departamento | Colaborador que no necesariamente es un gerente |
 
 ---
+# 📘 Entidad Asociativa en Bases de Datos
+
+## 🔍 ¿Qué es una Entidad Asociativa?
+
+Una **entidad asociativa** es una entidad especial que se utiliza para representar una **relación de muchos a muchos (N\:N)** entre dos entidades principales. Esta entidad permite **gestionar y organizar los datos de forma eficiente**, evitando ambigüedades y facilitando el modelado lógico de la base de datos.
+
+---
+
+## 🤔 ¿Cuándo usar una Entidad Asociativa?
+
+Se usa cuando:
+
+* Existe una **relación de muchos a muchos** entre dos entidades.
+* Queremos **almacenar información adicional** sobre esa relación.
+* Necesitamos **normalizar** el modelo para facilitar el diseño físico del banco de datos.
+
+---
+
+## 📐 Ejemplo: Pedidos y Libros
+
+Supongamos que tenemos las entidades:
+
+* **Pedido**: Representa una compra realizada.
+* **Libro**: Representa un producto disponible.
+
+Un pedido puede incluir varios libros, y un libro puede estar en muchos pedidos.
+
+🧩 Esta relación es **muchos a muchos (N\:N)**:
+
+```
+[Pedido] ⬌ [Libro]
+```
+
+Para resolverla, se crea la entidad asociativa **ItemPedido**, que permite:
+
+* Relacionar cada pedido con uno o más libros.
+* Registrar detalles como la cantidad de ejemplares comprados.
+
+---
+
+### 📊 Representación en un DER
+
+```plaintext
+[Pedido] 1---< [ItemPedido] >---1 [Libro]
+```
+
+🧷 En este diagrama:
+
+* La relación entre **Pedido** y **ItemPedido** es de **uno a muchos (1\:N)**.
+* La relación entre **Libro** y **ItemPedido** también es de **uno a muchos (1\:N)**.
+* `ItemPedido` almacena los **atributos de la relación**, como:
+
+  * Cantidad
+  * Precio unitario
+  * Descuento
+
+---
+
+## 🗃️ Tabla de Ejemplo
+
+| Entidad        | Atributos                           |
+| -------------- | ----------------------------------- |
+| Pedido         | IDPedido, Fecha, Cliente            |
+| Libro          | IDLibro, Título, Autor              |
+| **ItemPedido** | IDPedido, IDLibro, Cantidad, Precio |
+
+🔁 `ItemPedido` tiene claves foráneas de `Pedido` y `Libro`, formando una **clave primaria compuesta**.
+
+---
+
+## ✅ Beneficios de usar una Entidad Asociativa
+
+* ✅ Elimina la complejidad de las relaciones N\:N.
+* ✅ Permite agregar información relevante a la relación.
+* ✅ Facilita el diseño físico y la implementación en bases de datos relacionales.
+* ✅ Mejora la integridad y consistencia de los datos.
+
+---
+
+## 🎯 Conclusión
+
+Las entidades asociativas son esenciales para **representar relaciones complejas** de forma clara, eficiente y estructurada. Son una aplicación práctica del principio de **abstracción**, ya que simplifican el modelo de datos sin perder información.
+
+---
