@@ -79,3 +79,100 @@ Los atributos son esenciales para:
 > 📌 **Recuerda:** Un buen diseño de atributos contribuye directamente a la **eficiencia y utilidad** de todo el sistema de información.
 
 ---
+# 🧩 Tipos de Atributos en Bases de Datos
+
+Los **atributos** describen las **propiedades o características** de una entidad. Existen diversos tipos de atributos, clasificados según su comportamiento, estructura y propósito dentro del modelo de datos.
+
+---
+
+## 📚 Clasificación de los Atributos
+
+| Tipo de Atributo            | Descripción                                             | Ejemplo                                    |
+| --------------------------- | ------------------------------------------------------- | ------------------------------------------ |
+| 🔹 **Simple (Atómico)**     | No se puede dividir en partes más pequeñas.             | `DNI`, `Nombre`, `Código del producto`     |
+| 🔸 **Compuesto**            | Puede dividirse en subatributos más específicos.        | `Dirección` → calle, ciudad, país          |
+| 🔁 **Multivaluado (Multivalor)**         | Puede tener **más de un valor** para una misma entidad. | `Teléfonos`, `Correos electrónicos`        |
+| 🧮 **Derivado**             | Se calcula a partir de otro atributo o entidad.         | `Edad` a partir de `Fecha de nacimiento`   |
+| 🏷️ **Clave (Primary Key)** | Identifica de forma **única** a una entidad.            | `DNI`, `RUT`, `NIT`, `Código del producto` |
+
+---
+
+## 🔍 Tipos de Atributos en Detalle
+
+### 🔹 Atributo Simple o Atómico
+
+* Es **indivisible**, contiene un único valor.
+* ✅ Ideal para búsquedas directas.
+* 📌 *Ejemplo:* `DNI`, `Nombre`, `Precio`.
+
+---
+
+### 🔸 Atributo Compuesto
+
+* Puede descomponerse en **subatributos**.
+* Facilita consultas específicas por partes.
+* 📌 *Ejemplo:* `Dirección` → `Calle`, `Número`, `Ciudad`, `Departamento`.
+
+---
+
+### 🔁 Atributo Multivaluado o Multivador
+
+* Puede almacenar **varios valores** para una misma entidad.
+* Se recomienda modelar en una **entidad separada** o usar múltiples campos.
+* 📌 *Ejemplo:* `Teléfonos` de un cliente (puede tener celular y teléfono fijo).
+
+---
+
+### 🧮 Atributo Derivado
+
+* Su valor se obtiene de otro atributo (no se almacena directamente).
+* Aumenta la eficiencia evitando redundancia.
+* 📌 *Ejemplo:* `Edad` derivada de la `Fecha de nacimiento`.
+
+---
+
+### 🧾 Atributo Almacenado
+
+* El dato se guarda directamente en la base.
+* Suele usarse para calcular atributos derivados.
+* 📌 *Ejemplo:* `Fecha de nacimiento`, que se usa para calcular la `Edad`.
+
+---
+
+### 🏷️ Atributo Clave (Key Attribute)
+
+* Se utiliza para **identificar de forma única** una instancia de entidad.
+* Impide duplicidad y garantiza integridad referencial.
+* 📌 *Ejemplo:* `Código del Producto`, `DNI`, `NIT`, `RUES`.
+
+---
+
+## 🧠 Relación entre los Atributos
+
+* **Simples** vs **Compuestos**: Los simples no se dividen; los compuestos sí.
+* **Multivaluados**: Pueden tener varios valores a diferencia de los simples.
+* **Derivados**: No se almacenan, se calculan a partir de atributos **almacenados**.
+* **Clave**: Se usa para diferenciar instancias de entidades en la base de datos.
+
+---
+
+## 📝 Ejemplo Integrador: Entidad `Cliente`
+
+| Atributo              | Tipo         | Descripción                                   |
+| --------------------- | ------------ | --------------------------------------------- |
+| `DNI`                 | Clave        | Identifica de forma única al cliente          |
+| `Nombre`              | Simple       | Nombre completo                               |
+| `Teléfonos`           | Multivaluado | Puede tener más de un número                  |
+| `Dirección`           | Compuesto    | Se divide en ciudad, calle, número, etc.      |
+| `Fecha de nacimiento` | Almacenado   | Se usa para calcular la edad                  |
+| `Edad`                | Derivado     | Se obtiene a partir de la fecha de nacimiento |
+
+---
+
+## ✅ Conclusión
+
+* Los atributos permiten **estructurar la información** en una base de datos.
+* Comprender sus tipos facilita el **diseño de modelos eficientes y escalables**.
+* Una correcta clasificación ayuda a **mantener la integridad** y a **optimizar las consultas**.
+
+---
