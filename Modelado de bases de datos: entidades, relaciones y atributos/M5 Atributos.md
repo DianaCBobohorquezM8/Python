@@ -345,4 +345,100 @@ Llamamos **clave foránea** al atributo que:
 * El uso correcto de claves **foráneas** mantiene la **integridad referencial** del modelo de datos.
 
 ---
+# 🔐 Integridad de los Datos en Bases de Datos Relacionales
+
+La **integridad de los datos** garantiza que la información en una base de datos sea **precisa, coherente y confiable**. Para asegurarla, se aplican principios como el uso correcto de claves primarias, relaciones entre entidades y restricciones.
+
+---
+
+## 1. 🔑 Clave Principal (Primary Key)
+
+* Es un atributo (o combinación de atributos) que **identifica de forma única** cada registro en una entidad.
+* Debe ser **única** y **no puede tener valores nulos**.
+
+✅ **Ejemplo**: `codigo_cliente` puede ser la clave principal en la entidad `Cliente`.
+
+📌 **Reglas clave**:
+
+* No pueden existir dos registros con el mismo valor de clave principal.
+* La clave principal no puede incluir atributos opcionales (que acepten valores nulos).
+
+---
+
+## 2. 🧱 Entidades Fuertes
+
+* Son entidades que pueden **existir por sí solas** y poseen una **clave principal propia**.
+
+✅ **Ejemplos**:
+
+* `Cliente` (clave: `codigo_cliente`)
+* `Editorial` (clave: `codigo_editorial`)
+
+---
+
+## 3. 🧩 Entidades Débiles
+
+* **Dependen de una entidad fuerte** para existir.
+* **No tienen clave principal propia**, por lo tanto, requieren:
+
+  * Una **clave parcial** propia.
+  * Una **clave foránea** que proviene de la entidad fuerte.
+* Juntas forman la **clave compuesta**.
+
+✅ **Ejemplo**:
+Entidad `Libro`:
+
+* Clave foránea: `codigo_editorial`
+* Clave parcial: `codigo_libro`
+* Clave primaria compuesta: (`codigo_editorial`, `codigo_libro`)
+
+---
+
+## 4. 🔧 Clave Parcial
+
+* Es un atributo dentro de una entidad débil que se **combina con la clave principal de la entidad fuerte** para formar una clave primaria compuesta.
+
+✅ **Ejemplo**:
+En la entidad `PedidoDetalle`, `numero_linea` puede ser una clave parcial que se combina con `numero_pedido` (clave foránea) para formar la clave principal.
+
+---
+
+## 5. 📊 Integridad de los Datos
+
+* Implica que los datos estén **bien definidos, completos y correctos**.
+* Se logra mediante:
+
+  * Uso de claves primarias únicas.
+  * Restricciones `NOT NULL`.
+  * Restricciones `UNIQUE`.
+  * Relaciones y claves foráneas que mantengan la coherencia entre tablas.
+
+📌 **Ejemplo de regla de integridad**:
+
+* No se puede insertar un `pedido` si no existe el `cliente` correspondiente.
+
+---
+
+## 6. 🔗 Relaciones entre Entidades
+
+* Las **relaciones** conectan dos o más entidades mediante **claves foráneas**.
+* Mantienen la integridad referencial entre las tablas.
+
+✅ **Ejemplo**:
+
+* Un `Cliente` puede hacer muchos `Pedidos`.
+* Cada `Pedido` contiene una **clave foránea** `codigo_cliente` que referencia al cliente correspondiente.
+
+---
+
+### 🧠 Reglas Fundamentales para la Clave Principal
+
+| Regla           | Explicación                                                       |
+| --------------- | ----------------------------------------------------------------- |
+| **Unicidad**    | Cada valor debe ser único en la tabla.                            |
+| **No Nulo**     | No puede contener valores nulos.                                  |
+| **Estabilidad** | No debe cambiar frecuentemente.                                   |
+| **Atómico**     | No debe estar compuesto por atributos opcionales o multivaluados. |
+
+---
 
