@@ -270,3 +270,79 @@ Cuando diseñamos un **diagrama ER**, es importante:
 * Una buena organización visual facilita el entendimiento, mantenimiento y ampliación del modelo.
 
 ---
+# 🧱 Entidad Débil y Claves Compuestas
+
+## ¿Qué es una Entidad Débil?
+
+Una **entidad débil** es aquella que **no posee una clave primaria propia** que la identifique de forma única por sí sola. Por lo tanto, depende de una **entidad fuerte** con la cual está asociada para establecer su identidad.
+
+---
+
+## 🔑 Composición de la Clave Principal
+
+Para que una entidad débil pueda ser identificada de forma única en la base de datos, se recurre a una **clave compuesta** que se forma por:
+
+1. **Clave parcial**: Atributo(s) propios de la entidad débil que ayudan a identificarla dentro de su contexto.
+2. **Clave foránea**: Clave primaria de la entidad fuerte, que es necesaria para completar la identificación.
+
+> 🔗 Esta combinación se convierte en la **clave primaria compuesta** de la entidad débil.
+
+---
+
+## 🧭 Ejemplo Ilustrativo
+
+Supongamos el siguiente escenario:
+
+### Entidades:
+
+* **Departamento** (entidad fuerte)
+
+  * Clave primaria: `ID_Departamento`
+  * Otros atributos: `Nombre`, `Ubicación`
+
+* **Empleado Dependiente** (entidad débil)
+
+  * Atributos propios: `Nombre_Dependiente`, `Fecha_Nacimiento`
+  * No tiene clave única sin su relación con el departamento
+
+### Clave Compuesta de la Entidad Débil:
+
+* 🔑 `ID_Departamento` (clave foránea desde Departamento)
+* ➕ `Nombre_Dependiente` (clave parcial)
+
+✅ Así, la **clave primaria compuesta** para la entidad `Empleado Dependiente` sería:
+
+```plaintext
+(ID_Departamento, Nombre_Dependiente)
+```
+
+---
+
+## 🧬 Clave Foránea: ¿Por qué ese nombre?
+
+Llamamos **clave foránea** al atributo que:
+
+* 🔄 **Hace referencia** a la clave primaria de otra entidad.
+* 📥 Se **"importa"** desde la entidad fuerte para poder identificar una instancia de la entidad débil.
+* 🎯 **Establece la relación** entre ambas entidades en el modelo.
+
+📌 **Analogía**: El término “foráneo” viene de "extranjero". Es decir, la clave no nace en la entidad débil, **proviene del exterior**, de la entidad fuerte.
+
+---
+
+## 🛠️ Representación en el Modelo Entidad-Relación
+
+* La **entidad débil** se representa con un **rectángulo doble**.
+* Su **relación con la entidad fuerte** se representa con un **rombo doble**.
+* La **clave parcial** se subraya con línea punteada o en conjunto con la clave foránea.
+
+---
+
+## 🧠 Conclusión
+
+* Las **entidades débiles dependen** de una entidad fuerte para existir e identificarse.
+* La **clave compuesta** garantiza que cada instancia débil sea **única dentro del contexto** de su entidad fuerte.
+* El uso correcto de claves **foráneas** mantiene la **integridad referencial** del modelo de datos.
+
+---
+
