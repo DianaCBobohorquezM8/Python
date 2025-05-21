@@ -176,3 +176,97 @@ Los **atributos** describen las **propiedades o características** de una entida
 * Una correcta clasificación ayuda a **mantener la integridad** y a **optimizar las consultas**.
 
 ---
+# 🗂️ Atributos en el Modelado de Bases de Datos
+
+Los **atributos** son elementos clave que permiten describir con detalle a las entidades de un modelo de base de datos. Al definir un modelo entidad-relación (ER), es fundamental incluir los atributos que caracterizan a cada entidad para asegurar un diseño claro, completo y útil.
+
+---
+
+## 🧩 Importancia de Definir Atributos
+
+* 📌 Describen las **características** de las entidades.
+* 🔎 Permiten hacer consultas específicas en la base de datos.
+* 🧠 Facilitan el análisis y comprensión del sistema.
+* 🧱 Son la base para definir estructuras de tablas al implementar el modelo lógico.
+
+---
+
+## 🔽 Atributo de Especialización
+
+El **atributo de especialización** permite diferenciar subtipos dentro de una entidad general, usando un **triángulo** en los diagramas ER para señalar esta división.
+
+* Representa una **jerarquía** entre entidades.
+* Se utiliza cuando una entidad tiene variantes que comparten atributos generales, pero también poseen atributos específicos.
+
+### 🧑‍🤝‍🧑 Ejemplo: Entidad `Cliente`
+
+Se puede especializar en:
+
+* 👤 **Persona Natural**: Atributos → `RUT`, `DNI`
+* 🏢 **Persona Jurídica**: Atributos → `NIT`, `RUES`
+
+Visualmente, se representa con:
+
+```
+           Cliente
+           /    \
+Persona Natural   Persona Jurídica
+     |                   |
+  RUT, DNI           NIT, RUES
+```
+
+---
+
+## 📋 Atributos por Entidad
+
+### 🧾 Entidad: Cliente
+
+| Tipo de Cliente  | Atributos                          |
+| ---------------- | ---------------------------------- |
+| General          | Nombre, Dirección, Teléfono, Email |
+| Persona Natural  | RUT, DNI                           |
+| Persona Jurídica | NIT, RUES                          |
+
+---
+
+### 📦 Entidad: Pedido
+
+| Atributo | Descripción            |
+| -------- | ---------------------- |
+| Fecha    | Fecha del pedido       |
+| Valor    | Monto total del pedido |
+
+---
+
+### 📚 Entidad: Libro
+
+| Atributo           | Descripción                     |
+| ------------------ | ------------------------------- |
+| Título             | Nombre del libro                |
+| Autor              | Persona que escribió el libro   |
+| ISBN               | Identificador único del libro   |
+| Año de Publicación | Año en que fue publicado        |
+| Valor              | Precio del libro                |
+| Categoría          | Género o tipo de libro          |
+| Casa Editorial     | Editorial responsable del libro |
+
+---
+
+## 🧭 Organización Visual de Atributos
+
+Cuando diseñamos un **diagrama ER**, es importante:
+
+* ✏️ Colocar los atributos **alrededor de la entidad**.
+* 🎯 Resaltar los atributos **clave** (subrayados).
+* 🧬 Usar **subconjuntos** o jerarquías cuando sea necesario (como con especialización).
+* 📐 Mantener el diagrama **limpio y jerárquicamente claro**.
+
+---
+
+## 🎯 Conclusión
+
+* Definir los atributos es esencial para reflejar fielmente la realidad del sistema.
+* El atributo de especialización permite modelar jerarquías y diferencias entre tipos de entidades.
+* Una buena organización visual facilita el entendimiento, mantenimiento y ampliación del modelo.
+
+---
