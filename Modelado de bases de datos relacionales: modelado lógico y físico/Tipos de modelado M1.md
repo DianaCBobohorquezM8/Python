@@ -168,4 +168,51 @@ Pedido (ID_Pedido_, Fecha, Valor, ID_Cliente ➝ Cliente)
 
 ---
 
+# 🧱 Pasos para Construir el Modelo Lógico de Datos (MLD)
+
+El proceso de **modelado de una base de datos** no comienza directamente con el modelo lógico. Existen varias etapas previas que garantizan que el modelo final cumpla con todos los requisitos del usuario.
+
+---
+
+## 🔄 Etapas del Proceso de Modelado
+
+| Paso                              | Descripción                                                                                                    |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 1️⃣ **Entrevista con el usuario** | Se recopilan los requerimientos, reglas de negocio y necesidades.                                              |
+| 2️⃣ **Creación del Mini Mundo**   | Se define un subconjunto del mundo real que será representado en la base de datos.                             |
+| 3️⃣ **Modelo Conceptual**         | Se construye utilizando diagramas entidad-relación para representar entidades y relaciones de forma abstracta. |
+| 4️⃣ **Modelo Lógico**             | Se transforma el modelo conceptual en una estructura lógica (relaciones, claves, tipos de datos).              |
+| 5️⃣ **Modelo Físico**             | Se implementa el modelo lógico en un sistema gestor de base de datos (SGBD) específico.                        |
+
+---
+
+## 🔁 Transición al Modelo Lógico
+
+Una vez definido el **modelo entidad-relación (ER)**, se realiza la **transición al Modelo Lógico de Datos (MLD)**:
+
+* 🔁 Se convierten **entidades** en **relaciones**.
+* 🔗 Se definen **claves primarias** y **foráneas**.
+* 🧩 Se estructuran los **atributos** de cada relación.
+* 📊 Se representan las **restricciones y cardinalidades**.
+
+---
+
+## 🛠️ Herramienta Recomendada: diagrams.net
+
+* Puedes usar **[diagrams.net](https://diagrams.net)** (antes draw\.io) para crear el modelo lógico visualmente.
+* Esta herramienta te permite trabajar de forma colaborativa, guardar en la nube y exportar en varios formatos.
+
+---
+
+## 📌 Diferencias entre Modelo Lógico y Modelo Físico
+
+| Concepto       | Modelo Lógico 🧩        | Modelo Físico 💾                 |
+| -------------- | ----------------------- | -------------------------------- |
+| Representación | Relaciones              | Tablas en una base de datos      |
+| Enfoque        | Estructura lógica       | Implementación técnica           |
+| Claves         | Primarias y foráneas    | Tipos de datos, índices, etc.    |
+| Herramientas   | diagrams.net, ERD tools | SQL, DBMS como MySQL, PostgreSQL |
+
+---
+
 
