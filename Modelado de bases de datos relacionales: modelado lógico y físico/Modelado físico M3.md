@@ -83,3 +83,26 @@ Estas funciones son útiles para **mejorar la legibilidad** de modelos complejos
 | 🎨 Personalización visual | Opcional: colores, estilos de línea, agrupación visual |
 
 ---
+Claro, aquí tienes tu texto mejorado, organizado y convertido a formato Markdown con emojis para que sea más claro y fácil de entender:
+
+---
+
+# 🆕 Creación de Tablas en SQL Power Architect
+
+Para diseñar una tabla en SQL Power Architect, sigue estos pasos sencillos:
+
+1. **Crear la tabla:**
+
+   * Haz clic en **New Table**
+   * O simplemente presiona la tecla **`T`**
+
+2. **Diseñar la tabla:**
+
+   * Arrastra la tabla dentro del área de trabajo en la pantalla.
+   * Asigna un **nombre lógico** (cómo la referencia el modelo lógico).
+     *Ejemplo:* `cliente`
+   * Define un **nombre físico** (cómo se implementará en la base de datos).
+     *Ejemplo:* `Tb_CLIENTE`
+   * Establece la **clave principal (PK)** para identificar de forma única cada registro.
+
+---
