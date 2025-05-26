@@ -115,4 +115,114 @@ estado
 ```
 
 ---
+# 🧬 Especialización, Generalización y Atributos de Relaciones en el Modelo Conceptual
+
+---
+
+## 🔍 Especialización y Generalización
+
+### 🔹 **Generalización**
+
+Es el proceso de **agrupar entidades similares** en una entidad más general.
+👉 *Ejemplo:* `persona natural` y `persona jurídica` se pueden generalizar en la entidad `cliente`.
+
+### 🔸 **Especialización**
+
+Es el proceso **inverso a la generalización**: consiste en **crear subtipos** a partir de una entidad general para manejar sus particularidades.
+👉 *Ejemplo:* La entidad `cliente` se puede especializar en:
+
+* `persona_natural` (con atributos como nombre, cédula, fecha de nacimiento)
+* `persona_jurídica` (con atributos como razón social, NIT, representante legal)
+
+🧠 Esto permite personalizar los atributos y relaciones según el tipo de entidad.
+
+---
+
+## 🧷 Atributos de Relación
+
+Durante el modelado conceptual, **algunas relaciones pueden tener atributos propios**. Estos son llamados **atributos de relación** y su tratamiento depende de la cardinalidad de la relación.
+
+---
+
+### 📥 ¿Qué hacer con los atributos de relación?
+
+Durante el desarrollo del modelo conceptual, los atributos de relación:
+
+* En **relaciones 1:1 o 1\:N**: pueden **migrarse** a una de las entidades.
+* En **relaciones N\:M**: deben **permanecer en la relación**, la cual se transforma en una **entidad asociativa**.
+
+---
+
+## 🔁 Migración según la Cardinalidad
+
+### 📌 Relación 1:1
+
+🟦 **Ambas entidades tienen una sola instancia de la relación.**
+➡️ El atributo de la relación puede ser **migrado a cualquiera** de las dos entidades.
+
+#### 🧪 Ejemplo:
+
+**Relación:** `GESTIONA`
+**Atributo:** `fecha_inicio` (cuándo comenzó el colaborador a gestionar el departamento)
+
+| Entidad       | Relación | Entidad        |
+| ------------- | -------- | -------------- |
+| `COLABORADOR` | GESTIONA | `DEPARTAMENTO` |
+| 1             | ---      | 1              |
+
+🟩 **Solución:** El atributo `fecha_inicio` puede migrarse a cualquiera de las dos entidades (`colaborador` o `departamento`).
+
+---
+
+### 📌 Relación 1\:N
+
+🟦 **Una entidad tiene una única ocurrencia y la otra varias.**
+➡️ El atributo se migra hacia la entidad que tiene **una única instancia**.
+
+#### 🧪 Ejemplo:
+
+**Relación:** `TRABAJA_EN`
+**Atributo:** `fecha_ingreso`
+
+| Entidad       | Relación    | Entidad        |
+| ------------- | ----------- | -------------- |
+| `COLABORADOR` | TRABAJA\_EN | `DEPARTAMENTO` |
+| 1             | ←           | N              |
+
+🟩 **Solución:** El atributo `fecha_ingreso` se migra a la entidad `COLABORADOR`, ya que trabaja en un solo departamento.
+
+---
+
+### 📌 Relación N\:M
+
+🟦 **Ambas entidades tienen múltiples ocurrencias.**
+➡️ El atributo se mantiene en la relación, que se convierte en una **entidad asociativa**.
+
+#### 🧪 Ejemplo:
+
+**Relación:** `PARTICIPA_EN`
+**Atributo:** `horas_trabajadas`
+
+| Entidad       | Relación      | Entidad    |
+| ------------- | ------------- | ---------- |
+| `COLABORADOR` | PARTICIPA\_EN | `PROYECTO` |
+| N             | ---           | M          |
+
+🟩 **Solución:** Se crea una **nueva entidad** llamada `ASIGNACIÓN`, que contiene:
+
+* Clave foránea de `colaborador`
+* Clave foránea de `proyecto`
+* Atributo `horas_trabajadas`
+
+---
+
+## 📋 Resumen de Reglas de Migración
+
+| Cardinalidad | ¿Migrar atributo? | ¿A dónde migrarlo?                            |
+| ------------ | ----------------- | --------------------------------------------- |
+| 1:1          | ✅ Sí              | A cualquiera de las entidades                 |
+| 1\:N         | ✅ Sí              | A la entidad del lado "1" (menos ocurrencias) |
+| N\:M         | ❌ No              | Crear una entidad asociativa                  |
+
+---
 
