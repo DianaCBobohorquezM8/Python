@@ -83,10 +83,6 @@ Estas funciones son útiles para **mejorar la legibilidad** de modelos complejos
 | 🎨 Personalización visual | Opcional: colores, estilos de línea, agrupación visual |
 
 ---
-Claro, aquí tienes tu texto mejorado, organizado y convertido a formato Markdown con emojis para que sea más claro y fácil de entender:
-
----
-
 # 🆕 Creación de Tablas en SQL Power Architect
 
 Para diseñar una tabla en SQL Power Architect, sigue estos pasos sencillos:
@@ -165,5 +161,48 @@ Cada columna debe tener un **tipo de dato adecuado**. Por ejemplo:
 
 * La **clave primaria** no puede aceptar valores **nulos** (`NULL`).
 * Esta es una **regla esencial** para garantizar la integridad de los datos.
+
+---
+## 🧱 Columnas en el Modelo Físico de Base de Datos
+
+### 🧬 ¿Qué representan las columnas?
+
+En el **modelo físico**, las **columnas** representan los **atributos o campos** de las entidades, que ahora se conocen como **tablas**.
+Es decir:
+
+> 🔁 Lo que antes se llamaba **atributo** en el modelo lógico, ahora se llama **columna** en el modelo físico.
+
+---
+
+### 🏗️ Construcción de Columnas
+
+Al construir columnas en una tabla, se deben definir dos aspectos clave:
+
+* **Nombre lógico**: El nombre entendible y representativo dentro del dominio del negocio.
+  Ej: `Nombre del cliente`.
+
+* **Nombre físico**: El identificador técnico utilizado en la base de datos.
+  Ej: `nombre_cliente`.
+
+---
+
+### 🧠 Importancia de Definir el Tipo de Dato
+
+Cada columna debe tener un **tipo de dato** asignado.
+Esto es crucial porque:
+
+* 🧩 Determina el **formato**, **longitud** y **tipo de contenido** permitido (texto, números, fechas, etc.).
+* 🔒 Ayuda a garantizar la **integridad** y **validez** de los datos.
+* ⚙️ Optimiza el **rendimiento** de la base de datos.
+
+---
+
+### 📌 Resumen
+
+| Concepto               | Modelo Lógico    | Modelo Físico |
+| ---------------------- | ---------------- | ------------- |
+| Representación         | Atributo / Campo | Columna       |
+| Elemento estructural   | Entidad          | Tabla         |
+| Identificador de datos | Clave principal  | Primary Key   |
 
 ---
