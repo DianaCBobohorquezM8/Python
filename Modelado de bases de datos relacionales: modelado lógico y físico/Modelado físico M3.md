@@ -104,5 +104,66 @@ Para diseñar una tabla en SQL Power Architect, sigue estos pasos sencillos:
    * Define un **nombre físico** (cómo se implementará en la base de datos).
      *Ejemplo:* `Tb_CLIENTE`
    * Establece la **clave principal (PK)** para identificar de forma única cada registro.
+---
+## 🧰 Creación de una Tabla en un Proyecto de Base de Datos
+
+Al iniciar un nuevo proyecto de base de datos, uno de los primeros pasos es crear las tablas necesarias para almacenar la información. A continuación se describen los aspectos clave en la creación de una tabla de **clientes**.
+
+---
+
+### 📋 1. Creación de la Tabla
+
+* Puedes iniciar creando una tabla llamada **Clientes**.
+* A esta tabla se le pueden agregar **columnas**, **claves** y otras propiedades.
+
+---
+
+### ➕ 2. Inserción de Columnas
+
+* Para agregar una nueva columna, puedes:
+
+  * Usar un **ícono de acción** en la herramienta.
+  * O presionar la tecla **"c"** (atajo de teclado).
+* Se abrirá un **cuadro de diálogo** donde podrás definir:
+
+  * **Nombre lógico** (ej: Código del cliente).
+  * **Nombre físico** (ej: cod\_cliente).
+
+---
+
+### 🔑 3. Definición de la Clave Principal
+
+* Es fundamental definir una **clave primaria** (`Primary Key`) para identificar de manera única cada registro.
+* En este caso, se establece `código_cliente` como clave principal.
+* Esto implica que:
+
+  * No puede haber **valores nulos**.
+  * No puede haber **valores repetidos**.
+
+---
+
+### 📐 4. Selección de Tipos de Datos
+
+Cada columna debe tener un **tipo de dato adecuado**. Por ejemplo:
+
+| Columna         | Tipo de Dato   | Restricciones            |
+| --------------- | -------------- | ------------------------ |
+| código\_cliente | `VARCHAR(10)`  | Clave primaria, NOT NULL |
+| nombre\_cliente | `VARCHAR(50)`  | NOT NULL                 |
+| correo          | `VARCHAR(100)` |                          |
+
+---
+
+### 📝 5. Documentación de la Tabla
+
+* Es recomendable añadir **comentarios** o **remarks** en cada columna.
+* Esto permite a otros miembros del equipo comprender la **finalidad** de cada campo en la base de datos.
+
+---
+
+### ⚠️ 6. Restricciones Fundamentales
+
+* La **clave primaria** no puede aceptar valores **nulos** (`NULL`).
+* Esta es una **regla esencial** para garantizar la integridad de los datos.
 
 ---
