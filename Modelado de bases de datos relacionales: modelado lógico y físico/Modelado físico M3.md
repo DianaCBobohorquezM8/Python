@@ -208,7 +208,7 @@ Esto es crucial porque:
 ---
 # 🛠️ Opciones de Software para la Creación del Modelo Físico de Datos (MFD)
 
-Durante este curso se utiliza **SQL Power Architect** para crear el modelo físico del proyecto. Sin embargo, existen otras herramientas muy útiles que también puedes explorar para realizar esta etapa del modelado de bases de datos.
+Existen otras herramientas muy útiles para realizar esta etapa del modelado de bases de datos.
 
 ## 🧰 Herramientas Populares para el MFD
 
