@@ -43,10 +43,10 @@ Aquí encontrarás apuntes, ejemplos prácticos y conceptos clave que he aprendi
 
 * *Python para Data Science: primeros pasos*
 * *Python para Data Science: trabajar con funciones, estructuras de datos y excepciones*
+* *Modelado de bases de datos: entidades, relaciones y atributos*
 
 📚 **En progreso:**
 
-* *Modelado de bases de datos: entidades, relaciones y atributos*
 * *Modelado de bases de datos relacionales: modelado lógico y físico*
 
 ---
