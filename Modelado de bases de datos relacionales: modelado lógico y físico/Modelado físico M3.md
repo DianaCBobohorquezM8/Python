@@ -206,3 +206,24 @@ Esto es crucial porque:
 | Identificador de datos | Clave principal  | Primary Key   |
 
 ---
+# 🛠️ Opciones de Software para la Creación del Modelo Físico de Datos (MFD)
+
+Durante este curso se utiliza **SQL Power Architect** para crear el modelo físico del proyecto. Sin embargo, existen otras herramientas muy útiles que también puedes explorar para realizar esta etapa del modelado de bases de datos.
+
+## 🧰 Herramientas Populares para el MFD
+
+| Software                | Características Destacadas                                                                                | Ideal para...                 |
+| ----------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| **SQL Power Architect** | Herramienta utilizada en el curso. Permite crear y visualizar modelos físicos con facilidad.              | Aprendizaje y práctica guiada |
+| **MySQL Workbench**     | Muy completa. Permite modelar, editar y administrar bases de datos. Soporta ingeniería inversa y directa. | Proyectos profesionales       |
+| **Astah Professional**  | Soporta todo el proceso de modelado. Genera código desde diagramas y viceversa (ingeniería inversa).      | Análisis y documentación      |
+| **DBDesigner 4**        | Interfaz intuitiva y sencilla. Muy usada en universidades y compatible con MySQL.                         | Estudiantes y principiantes   |
+
+---
+
+## 🔍 Recomendaciones
+
+* ✅ Elige un software **confiable y bien establecido** en el mercado.
+* ✅ Considera tus **necesidades y nivel de experiencia** al seleccionar la herramienta.
+* ✅ Lo ideal es usar herramientas que permitan **generación de código** y **visualización clara** del modelo.
+---
