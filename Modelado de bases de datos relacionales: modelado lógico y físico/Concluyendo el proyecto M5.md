@@ -78,7 +78,11 @@
 | **FK**  | Clave foránea, relaciona con otra tabla.                               |
 | **PFK** | Clave foránea parcial (FK que también forma parte de la PK compuesta). |
 
-### 📏 Cardinalidad
+# 📐 Cardinalidad en Modelado de Bases de Datos
+
+## 🔹 ¿Qué es la Cardinalidad?
+
+La **cardinalidad** define la **relación numérica entre instancias de dos entidades** en un modelo de base de datos. Es decir, **cuántas veces una entidad puede estar relacionada con otra**.
 
 * Se asigna automáticamente al crear la relación.
 * Puede ajustarse más adelante según el modelo lógico:
@@ -108,3 +112,60 @@
 * `FKs hacia: PEDIDO y LIBRO`
 
 ---
+
+### 📏 Cardinalidad
+
+## 🔹 ¿Por qué es Importante?
+
+* Asegura que la base de datos **refleje correctamente las reglas de negocio**.
+* Evita **datos inconsistentes o relaciones incorrectas**.
+* Es clave en el diseño de modelos relacionales sólidos y eficientes.
+
+---
+
+## 🔹 Tipos de Cardinalidad
+
+| Tipo     | Significado                                                               | Ejemplo                                            |
+| -------- | ------------------------------------------------------------------------- | -------------------------------------------------- |
+| **1:1**  | Una instancia de A se relaciona con una sola instancia de B               | Una persona tiene un único pasaporte               |
+| **1\:N** | Una instancia de A se relaciona con muchas de B, pero B solo con una de A | Una editorial publica muchos libros                |
+| **N:1**  | Muchas instancias de A se relacionan con una sola de B                    | Muchos empleados en un solo departamento           |
+| **N\:M** | Muchas instancias de A se relacionan con muchas de B                      | Estudiantes inscritos en varios cursos y viceversa |
+
+⚠️ **Nota**: Las relaciones N\:M se resuelven mediante una **tabla intermedia**.
+
+<img width="256" alt="image" src="https://github.com/user-attachments/assets/cdcfc6f4-06b1-4725-b8e4-c2f3f21f0da6" />
+
+
+## 🔹 Símbolos de Cardinalidad en Power Architect
+
+| Cardinalidad | Símbolo           | Significado                         |
+| ------------ | ----------------- | ----------------------------------- |
+| **1**        | Número "1"        | Exactamente una instancia           |
+| **0:1**      | Línea + círculo   | Cero o una (opcional)               |
+| **1\:N**     | "Pata de gallina" | Una o muchas                        |
+| **0\:N**     | Círculo + pata    | Cero o muchas (opcional y múltiple) |
+
+---
+
+## 🔹 Cómo Ajustar la Cardinalidad en Power Architect
+
+1. **Selecciona la relación** (línea entre dos entidades).
+2. **Abre propiedades** (doble clic sobre la línea).
+3. **Modifica la cardinalidad** mínima y máxima en ambos extremos.
+4. **Guarda los cambios** y verifica el diagrama.
+
+---
+
+## 🔹 🧩 Ejemplo Práctico: Relación Libro – Autor
+
+* **Relación**: Muchos a Muchos (N\:M)
+* **Solución**: Crear tabla intermedia `Libro_Autor`
+
+| Entidad A | Relación con Tabla Intermedia | Entidad B    |
+| --------- | ----------------------------- | ------------ |
+| Libro     | 1\:N                          | Libro\_Autor |
+| Autor     | 1\:N                          | Libro\_Autor |
+
+---
+
