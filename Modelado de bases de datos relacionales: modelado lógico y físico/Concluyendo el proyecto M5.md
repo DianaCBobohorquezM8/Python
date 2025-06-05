@@ -168,4 +168,86 @@ La **cardinalidad** define la **relación numérica entre instancias de dos enti
 | Autor     | 1\:N                          | Libro\_Autor |
 
 ---
+# 🧱 Representación del Modelo Físico en Bases de Datos
 
+## 🔹 ¿Qué es el Modelo Físico?
+
+El **modelo físico** es la representación detallada de cómo los datos serán almacenados en un **Sistema de Gestión de Bases de Datos (SGBD)**. Se deriva del modelo lógico, pero incluye aspectos técnicos como:
+
+* Tipos de datos exactos (INT, VARCHAR, etc.)
+* Restricciones (PK, FK, NOT NULL, etc.)
+* Nombres reales de tablas y columnas
+* Índices, particiones y otros detalles de almacenamiento
+
+---
+
+## 🔹 Representación en Herramientas Comunes
+
+### 🛠️ **SQL Power Architect**
+
+* **Representación vertical**: Los atributos se listan uno debajo del otro.
+* **PK** (Primary Key): Se marca con el símbolo **PK** al lado del campo.
+* **FK** (Foreign Key): Se marca con el símbolo **FK**.
+* **Relaciones**: Representadas con líneas en forma de **“pata de gallina” o tridente**, mostrando cardinalidad (1\:N, 0\:N, etc.).
+
+### 🛠️ **MySQL Workbench**
+
+* Similar a Power Architect, pero con íconos gráficos:
+
+  * **Llave amarilla** 🔑 → Clave primaria (PK)
+  * **Rombo anaranjado** 🔶 → Clave foránea (FK)
+* Las relaciones también se representan con **patas de gallina**, visualizando la conexión entre tablas.
+
+---
+
+## 🔹 Alternativa: Implementación Directa en el SGBD
+
+En lugar de sólo representar el modelo físico gráficamente, también es posible pasar directamente del modelo lógico a su **implementación en un SGBD** como:
+
+* MySQL
+* PostgreSQL
+* SQL Server
+* Oracle
+
+Esto implica crear:
+
+* Sentencias **CREATE TABLE**
+* Definir **claves primarias y foráneas**
+* Crear **índices, restricciones y procedimientos**
+
+---
+
+## 🔹 Ejemplo Simple de Representación (Power Architect o Workbench)
+
+### Tabla: `Objetivo_Estrategico`
+
+```
++------------------------+
+| Objetivo_Estrategico   |
++------------------------+
+| PK id_objetivo         |
+| nombre_objetivo        |
+| descripcion_objetivo   |
+| periodo_ejecucion      |
++------------------------+
+```
+
+### Tabla: `Proyecto_Estrategico`
+
+```
++----------------------------+
+| Proyecto_Estrategico       |
++----------------------------+
+| PK id_proyecto             |
+| nombre_proyecto            |
+| descripcion_proyecto       |
+| cronograma                 |
+| presupuesto_estimado       |
+| recursos_necesarios        |
+| FK id_objetivo             |
++----------------------------+
+```
+
+👉 La relación `Objetivo_Estrategico 1:N Proyecto_Estrategico` se representará gráficamente con una línea que conecta ambas tablas con símbolos de "pata de gallina".
+
+---
