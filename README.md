@@ -37,7 +37,7 @@ Aquí encontrarás apuntes, ejemplos prácticos y conceptos clave que he aprendi
 
 ---
 
-## 📘 **Cursos Realizados y en Progreso**
+## 📘 **Cursos Realizados**
 
 ✅ **Completados:**
 
